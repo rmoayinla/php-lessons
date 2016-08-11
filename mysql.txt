@@ -1,0 +1,497 @@
+SELECT 
+        id
+        , IF(type = 'P', IFNULL(amount,0), IFNULL(amount,0) * -1) as amount
+		//if type is p, amount will be amount or if amount is null amount will be 0
+		if type is not p amount will be -1 or ifnull 0 //
+		
+FROM    report
+
+select id,
+    case report.type
+        when 'P' then amount
+        when 'N' then -amount
+    end as amount
+from
+    `report`
+	
+	SELECT CONCAT(QUOTE(user),'@',QUOTE(host)) UserAccount FROM mysql.user;
+	
+	//date validation //
+	SELECT IF(LAST_DAY('2007-02-25'),
+CONCAT(YEAR('07-08-25'), '-', month('2007-08-25'), '-', day('2007-08-25')),
+NULL
+) AS my_valid_formatted_date;
+
+
+//add brackets to case //
+select name from employee order by
+(case "john"
+when "john" then name
+when "sam" then surrname
+else id end)
+
+SELECT last_day ('2016/03/23')
+
+mysql> SELECT MAKEDATE(2011,31), MAKEDATE(2011,32);
+        -> '2011-01-31', '2011-02-01'
+mysql> SELECT MAKEDATE(2011,365), MAKEDATE(2014,365);
+        -> '2011-12-31', '2014-12-31'
+		
+		mysql> SELECT MAKETIME(12,15,30);
+        -> '12:15:30'
+		
+		mysql> SELECT MONTHNAME('2008-02-03');
+        -> 'February'
+		
+		SELECT date_of_birth as DB, concat(
+		day(date_of_birth), ' ', 
+		dayname(date_of_birth), ' ', 
+		monthname(date_of_birth), ' ', 
+		year(date_of_birth)) as "Full Date" from student_profile
+		
+		
+		select cast('2012/02/01' as date)
+		
+		SELECT enum_col FROM tbl_name ORDER BY CAST(enum_col AS CHAR);
+		
+		
+		"SELECT * FROM Sales WHERE TransactionDate BETWEEN CAST('$D1' as DATETIME) and CAST($D2 as DATETIME)"
+		
+		
+		INSERT INTO vehicles VALUES (blah); -- leaving out the number plate
+SELECT @lid:=LAST_INSERT_ID();
+UPDATE vehicles SET numberplate=concat(
+              substring('ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789', rand(@seed:=round(rand(@lid)*4294967296))*36+1, 1),
+              substring('ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789', rand(@seed:=round(rand(@seed)*4294967296))*36+1, 1),
+              substring('ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789', rand(@seed:=round(rand(@seed)*4294967296))*36+1, 1),
+              substring('ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789', rand(@seed:=round(rand(@seed)*4294967296))*36+1, 1),
+              substring('ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789', rand(@seed:=round(rand(@seed)*4294967296))*36+1, 1),
+              substring('ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789', rand(@seed:=round(rand(@seed)*4294967296))*36+1, 1),
+              substring('ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789', rand(@seed:=round(rand(@seed)*4294967296))*36+1, 1),
+              substring('ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789', rand(@seed)*36+1, 1)
+             )
+     WHERE id=@lid;
+	 
+	 set @rand = floor (round()*36);
+	 
+	 SELECT FLOOR(7 + (RAND() * 5));
+	 
+	 select @floor := floor(1 + (rand()* 14));
+select substring("ABCDEFGHIJKLMNO", @floor, 2)
+
+
+DELIMITER $$
+ 
+CREATE FUNCTION CustomerLevel(p_creditLimit double) RETURNS VARCHAR(10)
+    DETERMINISTIC
+BEGIN
+    DECLARE lvl varchar(10);
+ 
+    IF p_creditLimit > 50000 THEN
+ SET lvl = 'PLATINUM';
+    ELSEIF (p_creditLimit <= 50000 AND p_creditLimit >= 10000) THEN
+        SET lvl = 'GOLD';
+    ELSEIF p_creditLimit < 10000 THEN
+        SET lvl = 'SILVER';
+    END IF;
+ 
+ RETURN (lvl);
+END
+
+ALTER TABLE t2 AUTO_INCREMENT = value;
+ALTER TABLE t2 DROP COLUMN c, DROP COLUMN d;
+ALTER TABLE t1 MODIFY b BIGINT NOT NULL;
+ALTER TABLE t1 CHANGE b b BIGINT NOT NULL;
+ALTER TABLE t1 MODIFY col1 BIGINT UNSIGNED DEFAULT 1 COMMENT 'my column';
+ALTER TABLE tbl_name DROP FOREIGN KEY fk_symbol;
+mysql> SELECT TABLE_SCHEMA, TABLE_NAME, COLUMN_NAME, CONSTRAINT_NAME 
+     > FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE 
+     > WHERE REFERENCED_TABLE_SCHEMA IS NOT NULL;
+
+	 [CONSTRAINT [symbol]] FOREIGN KEY
+    [index_name] (index_col_name, ...)
+    REFERENCES tbl_name (index_col_name,...)
+    [ON DELETE reference_option]
+    [ON UPDATE reference_option]
+
+reference_option:
+    RESTRICT | CASCADE | SET NULL | NO ACTION
+	
+	CREATE TABLE child (
+    id INT, 
+    parent_id INT,
+    INDEX par_ind (parent_id),
+    FOREIGN KEY (parent_id) 
+        REFERENCES parent(id)
+        ON DELETE CASCADE
+) ENGINE=INNODB;
+
+CREATE TABLE product (
+    category INT NOT NULL, id INT NOT NULL,
+    price DECIMAL,
+    PRIMARY KEY(category, id)
+)   ENGINE=INNODB;
+
+CREATE TABLE customer (
+    id INT NOT NULL,
+    PRIMARY KEY (id)
+)   ENGINE=INNODB;
+
+CREATE TABLE product_order (
+    no INT NOT NULL AUTO_INCREMENT,
+    product_category INT NOT NULL,
+    product_id INT NOT NULL,
+    customer_id INT NOT NULL,
+
+    PRIMARY KEY(no),
+    INDEX (product_category, product_id),
+    INDEX (customer_id),
+
+    FOREIGN KEY (product_category, product_id)
+      REFERENCES product(category, id)
+      ON UPDATE CASCADE ON DELETE RESTRICT,
+
+    FOREIGN KEY (customer_id)
+      REFERENCES customer(id)
+)   ENGINE=INNODB;
+
+ALTER TABLE tbl_name
+    ADD [CONSTRAINT [symbol]] FOREIGN KEY
+    [index_name] (index_col_name, ...)
+    REFERENCES tbl_name (index_col_name,...)
+    [ON DELETE reference_option]
+    [ON UPDATE reference_option]
+mysql> SHOW CREATE TABLE ibtest11c\G
+*************************** 1. row ***************************
+       Table: ibtest11c
+Create Table: CREATE TABLE `ibtest11c` (
+  `A` int(11) NOT NULL auto_increment,
+  `D` int(11) NOT NULL default '0',
+  `B` varchar(200) NOT NULL default '',
+  `C` varchar(175) default NULL,
+  PRIMARY KEY  (`A`,`D`,`B`),
+  KEY `B` (`B`,`C`),
+  KEY `C` (`C`),
+  CONSTRAINT `0_38775` FOREIGN KEY (`A`, `D`)
+REFERENCES `ibtest11a` (`A`, `D`)
+ON DELETE CASCADE ON UPDATE CASCADE,
+  CONSTRAINT `0_38776` FOREIGN KEY (`B`, `C`)
+REFERENCES `ibtest11a` (`B`, `C`)
+ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=INNODB CHARSET=latin1
+1 row in set (0.01 sec)
+
+mysql> ALTER TABLE ibtest11c DROP FOREIGN KEY `0_38775`;
+
+ALTER TABLE Customer MODIFY Address char(100);
+
+BEGIN
+  DECLARE max_id int;        
+  SET max_id = (SELECT max(id) from exam_scores);
+  SET NEW.`id` = max_id + 1;
+END
+
+//procedure//
+if student_id <> "" then
+select * from student_profile where id = student_id;
+elseif student_class <> "" then 
+select * from student_profile where Class = student_class;
+else 
+select * from student_profile;
+end if
+
+DECLARE total_products INT DEFAULT 0
+ 
+SELECT COUNT(*) INTO total_products
+FROM products
+
+//changing delimiter //
+ DELIMITER //
+ CREATE PROCEDURE GetAllProducts()
+   BEGIN
+   SELECT *  FROM products;
+   END //
+ DELIMITER ;
+ 
+ //call procedure //
+ 	
+CALL STORED_PROCEDURE_NAME();
+
+mysql> delimiter //
+
+mysql> CREATE PROCEDURE simpleproc (OUT param1 INT)
+    -> BEGIN
+    ->   SELECT COUNT(*) INTO param1 FROM t;
+    -> END//
+Query OK, 0 rows affected (0.00 sec)
+
+mysql> delimiter ;
+
+mysql> CALL simpleproc(@a);
+Query OK, 0 rows affected (0.00 sec)
+
+mysql> SELECT @a;
+
+IF expression THEN 
+   statements;
+END IF;
+
+DELIMITER $$
+ 
+CREATE PROCEDURE GetCustomerLevel(
+    in  p_customerNumber int(11), 
+    out p_customerLevel  varchar(10))
+BEGIN
+    DECLARE creditlim double;
+ 
+    SELECT creditlimit INTO creditlim
+    FROM customers
+    WHERE customerNumber = p_customerNumber;
+ 
+    IF creditlim > 50000 THEN
+ SET p_customerLevel = 'PLATINUM';
+    ELSEIF (creditlim <= 50000 AND creditlim >= 10000) THEN
+        SET p_customerLevel = 'GOLD';
+    ELSEIF creditlim < 10000 THEN
+        SET p_customerLevel = 'SILVER';
+    END IF;
+ 
+END$$
+
+DELIMITER $$
+ 
+CREATE PROCEDURE GetCustomerShipping(
+ in  p_customerNumber int(11), 
+ out p_shiping        varchar(50))
+BEGIN
+    DECLARE customerCountry varchar(50);
+ 
+    SELECT country INTO customerCountry
+ FROM customers
+ WHERE customerNumber = p_customerNumber;
+ 
+    CASE customerCountry
+ WHEN  'USA' THEN
+    SET p_shiping = '2-day Shipping';
+ WHEN 'Canada' THEN
+    SET p_shiping = '3-day Shipping';
+ ELSE
+    SET p_shiping = '5-day Shipping';
+ END CASE;
+ 
+END$$
+
+SELECT IF( EXISTS(
+             SELECT *
+             FROM gdata_calendars
+             WHERE `group` =  ? AND id = ?), 1, 0)
+
+			 IF (SELECT 1 = 1 FROM Table WHERE FieldValue='') THEN
+BEGIN
+    SELECT TableID FROM Table WHERE FieldValue='';
+END;
+ELSE
+BEGIN
+    INSERT INTO Table (FieldValue) VALUES('');
+    SELECT LAST_INSERT_ID() AS TableID;
+END;
+END IF;
+
+INSERT INTO `table` (value1, value2) 
+SELECT 'stuff for value1', 'stuff for value2' FROM DUAL
+WHERE NOT EXISTS (SELECT * FROM `table` 
+      WHERE value1='stuff for value1' AND value2='stuff for value2') 
+LIMIT 1 
+
+CREATE PROCEDURE p (OUT ver_param VARCHAR(25), INOUT incr_param INT)
+BEGIN
+  # Set value of OUT parameter
+  SELECT VERSION() INTO ver_param;
+  # Increment value of INOUT parameter
+  SET incr_param = incr_param + 1;
+END;
+mysql> SET @increment = 10;
+mysql> CALL p(@version, @increment);
+mysql> SELECT @version, @increment;
+
+mysql> SELECT @min_price:=MIN(price),@max_price:=MAX(price) FROM shop;
+mysql> SELECT * FROM shop WHERE price=@min_price OR price=@max_price;
+
+INSERT INTO tbl_name (col1,col2) VALUES(15,col1*2);
+
+CREATE UNIQUE INDEX comp ON logs (`site_id`, `time`);
+
+ALTER TABLE  `newsubscriptions_orderspecification` DROP INDEX  `sub_def_id`
+
+create table mytable (
+accountNumber tinyint unsigned not null,
+authCode tinyint unsigned not null,
+authorized enum ('NO', 'YES') not null default 'NO',
+constraint uk_mytable unique(accountNumber, authCode));
+alter table mytable drop index uk_mytable;
+
+mysql> SELECT CURDATE();
+        -> '2008-06-13'
+mysql> SELECT CURDATE() + 0;
+        -> 20080613
+mysql> SELECT CURTIME();
+        -> '23:50:26'
+mysql> SELECT CURTIME() + 0;
+        -> 235026.000000
+
+mysql> SELECT DATE('2003-12-31 01:02:03');
+        -> '2003-12-31'
+
+mysql> SELECT DATEDIFF('2007-12-31 23:59:59','2007-12-30');
+        -> 1
+mysql> SELECT DATEDIFF('2010-11-30 23:59:59','2010-12-31');
+        -> -31
+
+mysql> SELECT '2008-12-31 23:59:59' + INTERVAL 1 SECOND;
+        -> '2009-01-01 00:00:00'
+mysql> SELECT INTERVAL 1 DAY + '2008-12-31';
+        -> '2009-01-01'
+mysql> SELECT '2005-01-01' - INTERVAL 1 SECOND;
+        -> '2004-12-31 23:59:59'
+mysql> SELECT DATE_ADD('2000-12-31 23:59:59',
+    ->                 INTERVAL 1 SECOND);
+        -> '2001-01-01 00:00:00'
+mysql> SELECT DATE_ADD('2010-12-31 23:59:59',
+    ->                 INTERVAL 1 DAY);
+        -> '2011-01-01 23:59:59'
+mysql> SELECT DATE_ADD('2100-12-31 23:59:59',
+    ->                 INTERVAL '1:1' MINUTE_SECOND);
+        -> '2101-01-01 00:01:00'
+mysql> SELECT DATE_SUB('2005-01-01 00:00:00',
+    ->                 INTERVAL '1 1:1:1' DAY_SECOND);
+        -> '2004-12-30 22:58:59'
+mysql> SELECT DATE_ADD('1900-01-01 00:00:00',
+    ->                 INTERVAL '-1 10' DAY_HOUR);
+        -> '1899-12-30 14:00:00'
+mysql> SELECT DATE_SUB('1998-01-02', INTERVAL 31 DAY);
+        -> '1997-12-02'
+mysql> SELECT DATE_ADD('1992-12-31 23:59:59.000002',
+    ->            INTERVAL '1.999999' SECOND_MICROSECOND);
+        -> '1993-01-01 00:00:01.000001'
+
+INTERVALS 
+unit Value				Expected expr Format
+MICROSECOND				MICROSECONDS
+SECOND					SECONDS
+MINUTE					MINUTES
+HOUR					HOURS
+DAY						DAYS
+WEEK					WEEKS
+MONTH					MONTHS
+QUARTER					QUARTERS
+YEAR					YEARS
+SECOND_MICROSECOND		'SECONDS.MICROSECONDS'
+MINUTE_MICROSECOND		'MINUTES:SECONDS.MICROSECONDS'
+MINUTE_SECOND			'MINUTES:SECONDS'
+HOUR_MICROSECOND		'HOURS:MINUTES:SECONDS.MICROSECONDS'
+HOUR_SECOND				'HOURS:MINUTES:SECONDS'
+HOUR_MINUTE				'HOURS:MINUTES'
+DAY_MICROSECOND			'DAYS HOURS:MINUTES:SECONDS.MICROSECONDS'
+DAY_SECOND				'DAYS HOURS:MINUTES:SECONDS'
+DAY_MINUTE				'DAYS HOURS:MINUTES'
+DAY_HOUR				'DAYS HOURS'
+YEAR_MONTH				'YEARS-MONTHS'
+
+
+mysql> SELECT TIMESTAMPDIFF(MONTH,'2003-02-01','2003-05-01');
+        -> 3
+mysql> SELECT TIMESTAMPDIFF(YEAR,'2002-05-01','2001-01-01');
+        -> -1
+mysql> SELECT TIMESTAMPDIFF(MINUTE,'2003-02-01','2003-05-01 12:05:55');
+        -> 128885
+
+select now() as "token date", now() + interval 1 hour as "token expire", timestampdiff(minute,now(),now() + interval 1 hour) as "time diff";
+
+mysql> SELECT ADDDATE('2008-01-02', 31);
+        -> '2008-02-02'
+mysql> SELECT CURTIME();
+        -> '23:50:26'
+mysql> SELECT DATE('2003-12-31 01:02:03');
+        -> '2003-12-31'
+//CHARACTER CASTING //
+SELECT enum_col FROM tbl_name ORDER BY CAST(enum_col AS CHAR);
+CONCAT('Date: ',CAST(NOW() AS DATE)).
+
+//date format //
+mysql> SELECT DATE_FORMAT('2009-10-04 22:23:00', '%W %M %Y');
+        -> 'Sunday October 2009'
+mysql> SELECT DATE_FORMAT('2007-10-04 22:23:00', '%H:%i:%s');
+        -> '22:23:00'
+mysql> SELECT DATE_FORMAT('1900-10-04 22:23:00',
+    ->                 '%D %y %a %d %m %b %j');
+        -> '4th 00 Thu 04 10 Oct 277'
+mysql> SELECT DATE_FORMAT('1997-10-04 22:23:00',
+    ->                 '%H %k %I %r %T %S %w');
+        -> '22 22 10 10:23:00 PM 22:23:00 00 6'
+mysql> SELECT DATE_FORMAT('1999-01-01', '%X %V');
+        -> '1998 52'
+mysql> SELECT DATE_FORMAT('2006-06-00', '%d');
+        -> '00'
+		
+mysql> SELECT DAYNAME('2007-02-03');
+        -> 'Saturday'
+//inner join //
+SELECT user.name, course.name
+FROM `user`
+INNER JOIN `course` on user.course = course.id;
+
+'SELECT a.tutorial_id, a.tutorial_author, b.tutorial_count
+        FROM tutorials_tbl a, tcount_tbl b
+        WHERE a.tutorial_author = b.tutorial_author';
+		
+ SELECT a.tutorial_id, a.tutorial_author, b.tutorial_count
+    -> FROM tutorials_tbl a LEFT JOIN tcount_tbl b
+    -> ON a.tutorial_author = b.tutorial_author;
+SELECT t1.name, t2.salary
+  FROM employee AS t1 INNER JOIN info AS t2 ON t1.name = t2.name;
+
+SELECT t1.name, t2.salary
+  FROM employee t1 INNER JOIN info t2 ON t1.name = t2.name;
+ 
+ SELECT s.id, s.firstname, s.email, s.username, e.* FROM `student_profile` as s inner join exam_scores as e on s.id = e.student_id;
+ SELECT s.id, s.firstname, s.email, s.username, e.* FROM `student_profile` as s left join exam_scores as e using (id) where s.id > 5
+ 
+ select * from MyTab T where date_add(T.runTime, INTERVAL 20 MINUTE) < NOW()
+ select * from mytab T where T.runTime < DATE_SUB(NOW(), INTERVAL 20 MINUTE)
+ 
+ SELECT ROUND(( UNIX_TIMESTAMP('2012-01-15 08:02:00') -
+         UNIX_TIMESTAMP('2012-01-14 08:00:00') )/60, 0) AS diff_hour
+
+mysql> SELECT TIMESTAMPADD(MINUTE,1,'2003-01-02');
+        -> '2003-01-02 00:01:00'
+mysql> SELECT TIMESTAMPADD(WEEK,1,'2003-01-02');
+        -> '2003-01-09'
+
+alter table users drop primary key;
+
+SELECT LAST_INSERT_ID()
+
+select @id:=id as id from class where id = last_insert_id();
+
+"INSERT INTO city (`city`) VALUES ('Paris') ON DUPLICATE KEY UPDATE `city` = 'Paris'"
+
+ try { 
+        $dbh->beginTransaction(); 
+        $tmt->execute( array('user', 'user@example.com')); 
+        $dbh->commit(); 
+        print $dbh->lastInsertId(); 
+    } catch(PDOExecption $e) { 
+        $dbh->rollback(); 
+        print "Error!: " . $e->getMessage() . "</br>"; 
+    } 
+} catch( PDOExecption $e ) { 
+    print "Error!: " . $e->getMessage() . "</br>"; 
+} 
+
+INSERT INTO table (a,b,c) VALUES (1,2,3)
+  ON DUPLICATE KEY UPDATE c=3;
+INSERT INTO table (a,b,c) VALUES (4,5,6)
+  ON DUPLICATE KEY UPDATE c=9;
+
+  insert into b (a1, a2) values(1,2) on duplicate key
+update b.a2 = IF(VALUES(a2) < b.a2,b.a2,VALUES(a2));

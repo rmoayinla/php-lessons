@@ -1,0 +1,893 @@
+JAVASCRIPT 
+^([a-z]+[a-z0-9_\.\-]+)+@+(([a-z]){3,8})+\.([a-z]){2,4}$/i
+
+^([a-z]+[a-z0-9_\.\-\+]+)+@+(([a-z]){3,8})\.(([a-z]){2,4})\.?(([a-z]){2,4})?$/i
+^(\+234)([7-9]){1}([0-1]){1}([0-9]){8}$
+^(\+234)(80|81|90|70){1}([0-9]){8}$
+
+php
+[a-zA-Z_]+\W*\d+\w*\W*
+
+
+jquery 
+$( "#foo" ).on( "click", function( event ) {
+  alert( "This will be displayed only once." );
+  $( this ).off( event );
+});
+
+$( "#foo" ).one( "click", function() {
+  alert( "This will be displayed only once." );
+});
+
+$( "div" ).one( "click", function() {
+  var index = $( "div" ).index( this );
+  $( this ).css({
+    borderStyle: "inset",
+    cursor: "auto"
+  });
+  $( "p" ).text( "Div at index #" + index + " clicked." +
+    " That's " + (++n) + " total clicks." );
+});
+
+$(".target").one("click mouseenter", function() {
+  $(".count").html(++n);
+});
+
+$(".target").one("click mouseenter", function() {
+  $(".count").html(++n);
+});
+
+$( "#foo" ).bind( "mouseenter mouseleave", function() {
+  $( this ).toggleClass( "entered" );
+});
+
+$( "div.test" ).on({
+  click: function() {
+    $( this ).toggleClass( "active" );
+  }, mouseenter: function() {
+    $( this ).addClass( "inside" );
+  }, mouseleave: function() {
+    $( this ).removeClass( "inside" );
+  }
+});
+
+var count = 0;
+$( "body" ).on( "click", "p", function() {
+  $( this ).after( "<p>Another paragraph! " + (++count) + "</p>" );
+});
+
+$( "#cart" ).on( "mouseenter mouseleave", function( event ) {
+  $( this ).toggleClass( "active" );
+});
+
+
+$( "body" ).delegate( "p", "click", function() {
+  $( this ).after( "<p>Another paragraph!</p>" );
+});
+
+
+var reg = new RegExp($(this).attr("pattern"));
+if (!reg.test(currentValue)) {
+    //error handling
+}
+
+ var emailReg = new RegExp(/^([A-Z0-9.%+-]+@@[A-Z0-9.-]+.[A-Z]{2,6})*([,;][\s]*([A-Z0-9.%+-]+@@[A-Z0-9.-]+.[A-Z]{2,6}))*$/i);
+      var emailText = $('#email').val();
+
+      if (!emailReg.test(emailText)) {
+          alert('Wrong Email Address\Addresses format! Please reEnter correct format');
+            return false;
+        }
+    }
+	
+function isValidEmailAddress(emailAddress) {
+    var pattern = new RegExp(/^[+a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/i);
+    // alert( pattern.test(emailAddress) );
+    return pattern.test(emailAddress);
+}
+
+ $('#emailid').filter(function(){
+                   var emil=$('#emailid').val();
+              var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+            if( !emailReg.test( emil ) ) {
+                alert('Please enter valid email');
+                } else {
+                alert('Thank you for your valid email');
+                }
+                })
+            });
+var emailRegex = new RegExp(/^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$/i);
+ var valid = emailRegex.test(emailAddress);
+  if (!valid) {
+    alert("Invalid e-mail address");
+    return false;
+  } else
+    return true;
+	}
+	
+var offsetTop = $('element').offset().top;
+if($(window).scrollTop() > offsetTop) { // do something } 
+
+$(window).scroll(function() {
+    if ($(this).scrollTop() > 0) {
+        // apply effects and animations
+    }
+});
+
+$(window).scroll(function() {
+    if ($(this).width() < 992) {
+        if ($(this).height() <= 768) {
+            if ($(this).scrollTop() < 500) {
+                // apply effects
+            }
+            if($(this).scrollTop() > 1000) {
+            // apply effects
+            }
+        }
+    }
+});
+
+if ($(window).scrollTop() > 60) {
+    $('.banner h2').hide();
+    $('.banner .info').show();
+} else {
+    $('.banner h2').show();
+    $('.banner .info').hide();                               
+}
+
+var secondAnimation = function() {          
+    $('.method:eq(0)').delay(1000).animate({
+				opacity: 1
+			}, 'slow', 
+			function() {
+				$(this).find('h4').css('background-color', '#b5c3d5');
+        }
+    );
+
+    $('.method:eq(1)').delay(2000).animate({
+				opacity: 1
+			}, 'slow', 
+		    function() {
+    	        $(this).find('h4').css('background-color', '#b5c3d5');
+        }
+    );
+
+    $('.method:eq(2)').delay(3000).animate({
+				opacity: 1
+			}, 'slow', 
+		    function() {
+    	        $(this).find('h4').css('background-color', '#b5c3d5');
+        }
+    );
+
+    $('.method:eq(3)').delay(4000).animate({
+				opacity: 1
+			}, 'slow', 
+	        function() {
+    	        $(this).find('h4').css('background-color', '#b5c3d5');
+        }
+    );
+};
+
+if ($(window).width() <= 549){
+    if($(window).scrollTop() > 1750){
+        secondAnimation();
+    }
+} else if ($(window).width() > 549 && $(window).width() <= 991) {
+    if ($(window).scrollTop() > 1150) {
+        secondAnimation();
+    }  
+} else {
+    if ($(window).scrollTop() > 850) {
+        secondAnimation();
+    }
+}
+
+var thirdAnimation = function() {
+    $('.blogs').find('p').delay(1400).animate({
+            opacity: 1, 
+            left: 0
+        }, 'slow'
+    );
+
+    $('.blogs').find('img').delay(2000).animate({
+            opacity: 1, 
+            right: 0
+        }, 'slow'
+    );
+
+    $('.blogs').find('button').delay(2500).animate({
+            opacity: 1, 
+            bottom: 0
+        }, 'slow'
+    );
+};
+
+if ($(window).width() <= 549) {
+    if ($(window).scrollTop() > 3500) {
+        thirdAnimation();
+    }
+} else if ($(window).width() > 549 && $(window).width() <= 991) {
+    if ($(window).scrollTop() > 2200) {
+        thirdAnimation();
+    }
+} else {
+    if ($(window).scrollTop() > 1600) {
+        thirdAnimation();
+    }
+}
+
+//http://www.sitepoint.com/scroll-based-animations-jquery-css3/ scrolling with jquery //
+
+//Cache reference to window and animation items
+var $animation_elements = $('.animation-element');
+var $window = $(window);
+
+$window.on('scroll', check_if_in_view);
+
+$window.on('scroll resize', check_if_in_view);
+
+$window.trigger('scroll');
+
+function check_if_in_view() {
+  var window_height = $window.height();
+  var window_top_position = $window.scrollTop();
+  var window_bottom_position = (window_top_position + window_height);
+
+  $.each($animation_elements, function() {
+    var $element = $(this);
+    var element_height = $element.outerHeight();
+    var element_top_position = $element.offset().top;
+    var element_bottom_position = (element_top_position + element_height);
+
+    //check to see if this current container is within viewport
+    if ((element_bottom_position >= window_top_position) &&
+        (element_top_position <= window_bottom_position)) {
+      $element.addClass('in-view');
+    } else {
+      $element.removeClass('in-view');
+    }
+  });
+}
+
+
+$elem1 = $('#myFirstElement');
+$elem2 = $('#mySecondElement');
+var scrollState = 'top';
+
+$(window).scroll(function(){ 
+
+    var scrollPos = $(window).scrollTop();
+
+    if( ( scrollPos != 0 ) && ( scrollState === 'top' ) ) {
+        $elem1.stop().animate({marginTop: '0px'}, 300);
+        $elem2.stop().animate({height: '10px'}, 300);
+        scrollState = 'scrolled';
+    }       
+    else if( ( scrollPos === 0 ) && ( scrollState === 'scrolled' ) ) {
+        $elem1.stop().animate({marginTop: '32px'}, 300);
+        $elem2.stop().animate({height: '80px'}, 300);
+        scrollState = 'top';
+    }
+
+});
+
+$('html, body').animate({
+    scrollTop: $(".middle").offset().top
+ }, 2000);
+ 
+ ($e.offset().top+($e.height()/2))-($(window).height()/2), or in English, "elementCenter minus halfViewportHeight"
+ 
+ $("document").ready(function() {
+
+$('.top-title').click(function(){
+
+$('html, body').animate({
+scrollTop: $(".middle").offset().top
+}, 2000);
+
+});
+
+$('.middle-title').click(function(){
+
+$('html, body').animate({
+scrollTop: $(".bottom").offset().top
+}, 2000);
+
+});
+
+$('.bottom-title').click(function(){
+
+$('html, body').animate({
+scrollTop: $(".top").offset().top
+}, 2000);
+
+});
+
+});
+
+$( "#clickme" ).click(function() {
+  $( "#book" ).animate({
+    opacity: 0.25,
+    left: "+=50",
+    height: "toggle"
+  }, 5000, function() {
+    // Animation complete.
+  });
+});
+
+
+//lightbox //
+$('.lightbox_trigger').click(function(e) {
+	
+	// Code that makes the lightbox appear
+	e.preventDefault();
+	var image_href = $(this).attr("href");
+	if ($('#lightbox').length > 0) { // #lightbox exists
+	
+	//insert img tag with clicked link's href as src value
+	$('#content').html('<img src="' + image_href + '" />');
+   	
+	//show lightbox window - you can use a transition here if you want, i.e. .show('fast')
+	$('#lightbox').show();
+	}
+	else { //#lightbox does not exist 
+	
+	//create HTML markup for lightbox window
+	var lightbox = 
+	'<div id="lightbox">' +
+		'<p>Click to close</p>' +
+		'<div id="content">' + //insert clicked link's href into img src
+			'<img src="' + image_href +'" />' +
+		'</div>' +	
+	'</div>';
+		
+	//insert lightbox HTML into page
+	$('body').append(lightbox);
+}
+}
+
+#lightbox img {
+    box-shadow:0 0 25px #111;
+    -webkit-box-shadow:0 0 25px #111;
+    -moz-box-shadow:0 0 25px #111;
+    max-width:940px;
+}
+
+#lightbox {
+    position:fixed; /* keeps the lightbox window in the current viewport */
+    top:0; 
+    left:0; 
+    width:100%; 
+    height:100%; 
+    background:url(overlay.png) repeat; 
+    text-align:center;
+} 
+
+});
+
+<div class="list-group">
+  <a href="#" class="list-group-item">First item</a>
+  <a href="#" class="list-group-item">Second item</a>
+  <a href="#" class="list-group-item">Third item</a>
+</div>
+
+<div class="dropdown">
+  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Dropdown Example
+  <span class="caret"></span></button>
+  <ul class="dropdown-menu">
+    <li><a href="#">HTML</a></li>
+    <li><a href="#">CSS</a></li>
+    <li><a href="#">JavaScript</a></li>
+  </ul>
+</div>
+
+  <div class="dropdown">
+    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Dropdown Example
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu dropdown-menu-right">
+      <li><a href="#">HTML</a></li>
+      <li><a href="#">CSS</a></li>
+      <li><a href="#">JavaScript</a></li>
+      <li class="divider"></li>
+      <li><a href="#">About Us</a></li>
+    </ul>
+  </div>
+  
+  
+  <div class="panel-group" id="accordion">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+        Collapsible Group 1</a>
+      </h4>
+    </div>
+    <div id="collapse1" class="panel-collapse collapse in">
+      <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+      minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat.</div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+        Collapsible Group 2</a>
+      </h4>
+    </div>
+    <div id="collapse2" class="panel-collapse collapse">
+      <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+      minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat.</div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+        Collapsible Group 3</a>
+      </h4>
+    </div>
+    <div id="collapse3" class="panel-collapse collapse">
+      <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+      minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat.</div>
+    </div>
+  </div>
+</div>
+
+<div class="form-group">
+  <label for="comment">Comment:</label>
+  <textarea class="form-control" rows="5" id="comment"></textarea>
+</div>
+
+
+var data = new FormData();
+	data.append("files[]", $conv(this).prop("files")[0]);
+		
+	$conv("#container_myFile").html("Uploading...");
+	$conv.ajax({
+		url: "upload.php",
+		data: data,
+		type: "POST",
+		dataType: "json",
+		cache: false,
+	    	contentType: false,
+		processData: false,
+		enctype: "multipart/form-data",
+
+e.preventDefault();
+	
+	var f = e.target,
+		formData = new FormData(f),
+		xhr = new XMLHttpRequest();
+	
+	xhr.open("POST", f.action);
+	xhr.send(formData);
+	
+	var formData = new FormData();
+
+formData.append("username", "Groucho");
+formData.append("accountnum", 123456); // number 123456 is immediately converted to a string "123456"
+
+// HTML file input, chosen by user
+formData.append("userfile", fileInputElement.files[0]);
+
+var formElement = document.querySelector("form");
+var request = new XMLHttpRequest();
+request.open("POST", "submitform.php");
+request.send(new FormData(formElement));
+
+var form = document.forms.namedItem("fileinfo");
+form.addEventListener('submit', function(ev) {
+
+  var oOutput = document.querySelector("div"),
+      oData = new FormData(form);
+
+  oData.append("CustomField", "This is some extra data");
+
+  var oReq = new XMLHttpRequest();
+  oReq.open("POST", "stash.php", true);
+  oReq.onload = function(oEvent) {
+    if (oReq.status == 200) {
+      oOutput.innerHTML = "Uploaded!";
+    } else {
+      oOutput.innerHTML = "Error " + oReq.status + " occurred when trying to upload your file.<br \/>";
+    }
+  };
+
+  oReq.send(oData);
+  ev.preventDefault();
+}, false);
+
+var fd = new FormData(document.querySelector("form"));
+fd.append("CustomField", "This is some extra data");
+$.ajax({
+  url: "stash.php",
+  type: "POST",
+  data: fd,
+  processData: false,  // tell jQuery not to process the data
+  contentType: false   // tell jQuery not to set contentType
+});
+
+$("#formId")[0].reset()
+// or
+$("#formId").get(0).reset();
+$('#form_id').trigger("reset");
+
+$( "li" ).eq( 2 ).css( "background-color", "red" ); //style only the second li element //
+
+//carousel //
+var $item = $('.carousel .item'); // select the slide class //
+var $wHeight = $(window).height(); // get the current window size //
+
+$item.height($wHeight); // set the size of the slide to the window size //
+$item.addClass('full-screen'); //add full-screen class //
+
+$('.carousel img').each(function() { //loop through the slide images //
+  var $src = $(this).attr('src'); // get the src attribute //
+  var $color = $(this).attr('data-color'); // get the color attribute //
+  $(this).parent().css({ // pick the image parent //
+    'background-image' : 'url(' + $src + ')', // set background image to image src //
+    'background-color' : $color
+  });
+  $(this).remove(); // remove the img element //
+});
+
+$(window).on('resize', function (){ // when we resize the window //
+  $wHeight = $(window).height(); // get the new height //
+  $item.height($wHeight); // and scale the slide to the new height //
+});
+$item.eq(0).addClass('active'); // select the first slide element and add the active class //
+.full-screen {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+var value = "2012-09-10";
+value = value.replace(/([0-9]{4})[\/-]([0-9]{2})[\/-]([0-9]{2})/,"$3/$2/$1");
+alert(value);//10/09/2012 //
+
+var a = "The quick brown fox jumped over the lazy dog.";
+
+var pattern = /quick|brown|lazy/ig;
+
+a.replace( pattern, function replacer(match){
+    return match.toUpperCase();
+} );
+
+The function replacer gets several arguments. The first is always the matched string, which is often all you want/need. If the pattern has any ( ) group match(es), those will be passed as the next argument(s). The next argument will be the numeric indexed position of the match in the bigger string.
+
+The final argument is the full original string being replaced against, not the current in-progress string value that's being processed.
+template.replace(
+    /(<span id=")(.*?)(">)(<\/span>)/g,
+    function(match,$1,$2,$3,$4){
+        return $1 + $2 + $3 + prices[$2] + $4;
+    }
+);
+
+var objRegExp = /(\w+)\s(\w+)/;
+var strFullName = "Jane Doe";
+var strReverseName = strFullName.replace(objRegExp, "$2, $1");
+alert(strReverseName) //alerts "Doe, John";
+
+(\[b\])(.*)(\[[\\\/]b\]) // check for [b] text [/b]
+
+
+
+var $numberofSlides = $('.item').length;
+var $currentSlide = Math.floor((Math.random() * $numberofSlides));
+
+$('.carousel-indicators li').each(function(){
+  var $slideValue = $(this).attr('data-slide-to');
+  if($currentSlide == $slideValue) {
+    $(this).addClass('active');
+    $item.eq($slideValue).addClass('active');
+  } else {
+    $(this).removeClass('active');
+    $item.eq($slideValue).removeClass('active');
+  }
+});
+
+
+//Function to capitalise first character for strings
+function capitalizeFirstLetter(string) {
+    return string.charAt(0).toUpperCase() + string.slice(1).toLowerCase();
+}
+$(document).on('knack-view-render.any', function (event, view, data) {
+// Remove #field_1 so it works for ALL inputs
+    $('input#field_1').keyup(function() {
+        this.value = capitalizeFirstLetter(this.value);
+    });
+});
+
+
+
+Name	Type	Default	Description	Try it
+backdrop	boolean or the string "static"	true	Specifies whether the modal should have a dark overlay:
+
+true - dark overlay
+false - no overlay (transparent)
+If you specify the value "static", it is not possible to close the modal when clicking outside of it
+
+Using JSUsing data
+keyboard	boolean	true	Specifies whether the modal can be closed with the escape key (Esc):
+
+true - the modal can be closed with Esc
+false - the modal cannot be closed with Esc
+Using JSUsing data
+show	boolean	true	Specifies whether to show the modal when initialized	Using JSUsing data
+Modal Methods
+The following table lists all available modal methods.
+
+Method	Description	Try it
+.modal(options)	Activates the content as a modal. See options above for valid values	Try it
+.modal("toggle")	Toggles the modal	Try it
+.modal("show")	Opens the modal	Try it
+.modal("hide")	Hides the modal
+
+$("#myModal3").modal({backdrop: "static"}); $("#myModal2").modal({keyboard: false});$("#myModal").modal("toggle"); $("#myModal").modal("hide");
+
+
+$( document ).ajaxStart(function() {
+  $( "#loading" ).show();
+});
+
+$( document ).ajaxSend(function( event, request, settings ) {
+  $( "#msg" ).append( "<li>Starting request at " + settings.url + "</li>" );
+});
+
+$( document ).ajaxStop(function() {
+  $( "#loading" ).hide();
+});
+
+$( document ).ajaxError(function( event, request, settings ) {
+  $( "#msg" ).append( "<li>Error requesting page " + settings.url + "</li>" );
+});
+
+$( document ).ajaxError(function( event, jqxhr, settings, thrownError ) {
+  if ( settings.url == "ajax/missing.html" ) {
+    $( "div.log" ).text( "Triggered ajaxError handler." );
+  }
+});
+
+$( "#result" ).load( "ajax/test.html #container" );
+
+	
+$( "#objectID" ).load( "test.php", { "choices[]": [ "Jon", "Susan" ] } );
+
+$( "#feeds" ).load( "feeds.php", { limit: 25 }, function() {
+  alert( "The last 25 entries in the feed have been loaded" );
+});
+
+var $loading = $('#loadingDiv').hide();
+$(document)
+  .ajaxStart(function () {
+    $loading.show();
+  })
+  .ajaxStop(function () {
+    $loading.hide();
+  });
+  
+ 
+ $(document).ready(function(){
+    $("#spinner").bind("ajaxSend", function() {
+        $(this).show();
+    }).bind("ajaxStop", function() {
+        $(this).hide();
+    }).bind("ajaxError", function() {
+        $(this).hide();
+    });
+ 
+     });
+$('form#register').find('input').each(function(){
+    if(!$(this).prop('required')){
+        console.log("NR");
+    } else {
+        console.log("IR");
+    }
+});
+
+function formcheck() {
+  var fields = $(".ss-item-required")
+        .find("select, textarea, input").serializeArray();
+  
+  $.each(fields, function(i, field) {
+    if (!field.value)
+      alert(field.name + ' is required');
+   }); 
+  console.log(fields);
+}
+.spinner {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-left: -50px; /* half width of the spinner gif */
+    margin-top: -50px; /* half height of the spinner gif */
+    text-align:center;
+    z-index:1234;
+    overflow: auto;
+    width: 100px; /* width of the spinner gif */
+    height: 102px; /*hight of the spinner gif +2px to fix IE8 issue */
+}
+
+.modal {
+    display:    none;
+    position:   fixed;
+    z-index:    1000;
+    top:        0;
+    left:       0;
+    height:     100%;
+    width:      100%;
+    background: rgba( 255, 255, 255, .8 ) 
+                url('http://i.stack.imgur.com/FhHRx.gif') 
+                50% 50% 
+                no-repeat;
+}
+
+/* When the body has the loading class, we turn
+   the scrollbar off with overflow:hidden */
+body.loading {
+    overflow: hidden;   
+}
+
+/* Anytime the body has the loading class, our
+   modal element will be visible */
+body.loading .modal {
+    display: block;
+}
+$body = $("body");
+
+$(document).on({
+    ajaxStart: function() { $body.addClass("loading");    },
+     ajaxStop: function() { $body.removeClass("loading"); }    
+});
+
+$('#form').submit(function() {
+    $.ajax({
+        url: '/whatever.php',
+        beforeSend: function() { $('#wait').show(); },
+        complete: function() { $('#wait').hide(); }
+    });
+    return false;
+});
+
+//popup//
+<a class="btn" data-popup-open="popup-1" href="#">Open Popup #1</a>
+ 
+<div class="popup" data-popup="popup-1">
+    <div class="popup-inner">
+        <h2>Wow! This is Awesome! (Popup #1)</h2>
+        <p>Donec in volutpat nisi. In quam lectus, aliquet rhoncus cursus a, congue et arcu. Vestibulum tincidunt neque id nisi pulvinar aliquam. 
+		Nulla luctus luctus ipsum at ultricies. Nullam nec velit dui. Nullam sem eros, pulvinar sed pellentesque ac, feugiat et turpis. 
+		Donec gravida ipsum cursus massa malesuada tincidunt. Nullam finibus nunc mauris, quis semper neque ultrices in. 
+		Ut ac risus eget eros imperdiet posuere nec eu lectus.</p>
+        <p><a data-popup-close="popup-1" href="#">Close</a></p>
+        <a class="popup-close" data-popup-close="popup-1" href="#">x</a>
+    </div>
+</div>
+
+/* Outer */
+.popup {
+    width:100%;
+    height:100%;
+    display:none;
+    position:fixed;
+    top:0px;
+    left:0px;
+    background:rgba(0,0,0,0.75);
+}
+ 
+/* Inner */
+.popup-inner {
+    max-width:700px;
+    width:90%;
+    padding:40px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    -webkit-transform:translate(-50%, -50%);
+    transform:translate(-50%, -50%);
+    box-shadow:0px 2px 6px rgba(0,0,0,1);
+    border-radius:3px;
+    background:#fff;
+}
+ 
+/* Close Button */
+.popup-close {
+    width:30px;
+    height:30px;
+    padding-top:4px;
+    display:inline-block;
+    position:absolute;
+    top:0px;
+    right:0px;
+    transition:ease 0.25s all;
+    -webkit-transform:translate(50%, -50%) rotate(180deg);
+    transform:translate(50%, -50%) rotate(180deg);
+    border-radius:1000px;
+    background:rgba(0,0,0,0.8);
+    font-family:Arial, Sans-Serif;
+    font-size:20px;
+    text-align:center;
+    line-height:100%;
+    color:#fff;
+}
+ 
+.popup-close:hover {
+    -webkit-transform:translate(50%, -50%) rotate(180deg);
+    transform:translate(50%, -50%) rotate(180deg);
+    background:rgba(0,0,0,1);
+    text-decoration:none;
+}
+
+$(function() {
+    //----- OPEN
+    $('[data-popup-open]').on('click', function(e)  {
+        var targeted_popup_class = jQuery(this).attr('data-popup-open');
+        $('[data-popup="' + targeted_popup_class + '"]').fadeIn(350);
+ 
+        e.preventDefault();
+    });
+ 
+    //----- CLOSE
+    $('[data-popup-close]').on('click', function(e)  {
+        var targeted_popup_class = jQuery(this).attr('data-popup-close');
+        $('[data-popup="' + targeted_popup_class + '"]').fadeOut(350);
+ 
+        e.preventDefault();
+    });
+});
+
+
+//bootstrap popover //
+
+<a href="#" data-toggle="popover" title="Popover Header" data-content="Some content inside the popover"
+data-placement="top|bottom|left|auto" data-trigger"focus|hover">Toggle popover</a>
+<script>
+$(document).ready(function(){
+    $('[data-toggle="popover"]').popover();
+});
+</script>
+
+
+//bootstrap affix //
+ <nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="197">
+ /* Note: Try to remove the following lines to see the effect of CSS positioning */
+  .affix {
+      top: 0;
+      width: 100%;
+  }
+
+  .affix + .container-fluid {
+      padding-top: 70px;
+  }
+  
+  $('#myAffix').affix({
+  offset: {
+    top: 100,
+    bottom: function () {
+      return (this.bottom = $('.footer').outerHeight(true))
+    }
+  }
+})
+
+$('#nav').affix({
+  offset: {
+    bottom: ($('footer').outerHeight(true) + 
+            $('.application').outerHeight(true)) + 
+            40
+  }//when the affix element position to the bottom is equal to this stop the affix
+});
+ //bootstrap tooltip //
+ $(function () {
+  $('[data-toggle="tooltip"]').tooltip(container:".wrapper-body", trigger: "hover|focus")
+})
+
+<a href="#" data-toggle="tooltip" title="Some tooltip text!" data-placement="top|left|bottom">Hover over me</a>

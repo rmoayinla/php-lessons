@@ -1,0 +1,480 @@
+#Developmenet tools #
+
+1. composer 
+2. bower just like composer tools
+
+
+3. sass  - http://sass-lang.com/documentation/file.SASS_REFERENCE.html
+4. npm
+5. github - https://guides.github.com/activities/hello-world/
+6. git - https://git-scm.com/about/staging-area
+6. scout app - http://mhs.github.io/scout-app/
+7. node.js 
+8. grunt - http://gruntjs.com/getting-started
+9. cloudfare - https://www.cloudflare.com/a/login
+10. bootstrap - http://getbootstrap.com/css/
+11. less css - http://lesscss.org/ //less for php http://lessphp.gpeasy.com/
+12. minify - https://github.com/mrclay/minify
+13. yslow - http://yslow.org/
+14. pingdom - 
+15. ruby - 
+16. google pagespeed
+17 fonts - https://edgewebfonts.adobe.com/fonts
+18. vagrant - https://www.vagrantup.com/docs/virtualbox/boxes.html
+19. heroku 
+20. phpdoc - https://phpdoc.org/docs/latest/getting-started/your-first-set-of-documentation.html
+21. php code sniffer - https://github.com/squizlabs/PHP_CodeSniffer/wiki/Fixing-Errors-Automatically
+22. https://dashboard.pantheon.io/users/cfca5c58-4840-4fd0-bdac-9341fde75ea5#sites/list
+23. pastebin - http://pastebin.com/
+http://snippi.com/s/
+https://shiftedit.net/
+
+1. lazyload - http://www.appelsiini.net/projects/lazyload 
+				http://luis-almeida.github.io/unveil/
+				http://jquery.eisbehr.de/lazy/#examples 
+				
+2. scroll anim - http://johnpolacek.github.io/superscrollorama/
+	
+
+
+
+
+
+
+tools 
+https://www.scanmyserver.com/, http://www.unmaskparasites.com/
+
+IDES
+https://www.competethemes.com/blog/wordpress-development-tools/
+https://developer.wordpress.org/themes/getting-started/setting-up-a-development-environment/
+http://www.wpmayor.com/best-ide-for-wordpress-development/
+http://torquemag.io/2015/05/wordpress-development-tools/
+http://torquemag.io/2015/12/17-best-code-editors-wordpress-developers-users/
+https://www.corephp.com/blog/the-best-php-ides-that-every-web-developer-must-know/
+
+wordpress plugin 
+http://ottopress.com/2009/wordpress-settings-api-tutorial/
+http://codex.wordpress.org/Settings_API
+http://codex.wordpress.org/Plugin_API
+http://docs.presscustomizr.com/article/26-wordpress-actions-filters-and-hooks-a-guide-for-non-developers
+https://developer.wordpress.com/2012/05/14/querying-posts-without-query_posts/
+https://www.sitepoint.com/real-world-example-wordpress-plugin-development/?utm_source=sitepoint&utm_medium=relatedinline&utm_term=javascript&utm_campaign=relatedauthor
+https://www.smashingmagazine.com/2009/09/how-to-integrate-facebook-with-wordpress/
+https://github.com/scottsweb/mobble
+
+
+http://adambrown.info/p/wp_hooks
+
+http://code.tutsplus.com/articles/10-quick-tips-optimizing-speeding-up-your-wordpress-site--wp-23148
+http://www.prelovac.com/vladimir/wordpress-optimization-guide/
+https://premium.wpmudev.org/blog/creating-custom-taxonomies-wordpress/
+https://premium.wpmudev.org/blog/20-eye-catching-wordpress-business-themes/
+https://premium.wpmudev.org/blog/free-responsive-wordpress-business-themes/
+https://www.elegantthemes.com/blog/resources/the-best-free-wordpress-themes-available-in-2015
+https://thethemefoundry.com/wordpress-themes/make/
+http://themegrill.com/blog/free-responsive-wordpress-themes/
+https://premium.wpmudev.org/blog/using-free-wp-themes/?mv=b&utm_expid=3606929-67.KOuGWaEfRS2elZCEv5f8LA.1&utm_referrer=https%3A%2F%2Fwww.google.com
+https://www.smashingmagazine.com/2013/03/a-guide-to-wordpress-theme-options/
+
+https://premium.wpmudev.org/blog/htaccess/
+http://www.wprecipes.com/wordpress-tip-move-all-javascript-files-to-the-footer-automatically
+http://themeforest.net/item/joyn-creative-multipurpose-theme/8854021?ref=jbj
+
+http://codex.wordpress.org/Class_Reference/wpdb
+http://codex.wordpress.org/Shortcode_API
+http://codex.wordpress.org/Widgetizing_Themes
+http://www.wpbeginner.com/showcase/21-best-free-wordpress-business-themes/
+http://wpdean.com/html5-wordpress-themes/
+
+child themes 
+https://www.smashingmagazine.com/2016/01/create-customize-wordpress-child-theme/
+
+
+codex 
+https://codex.wordpress.org/Custom_Fields
+https://metabox.io/docs/getting-started/
+http://codex.wordpress.org/Widgets_API#Displaying_Widgets
+wordpress sanitization and validation - https://codex.wordpress.org/Validating_Sanitizing_and_Escaping_User_Data, http://code.tutsplus.com/tutorials/data-sanitization-and-validation-with-wordpress--wp-25536
+https://generatewp.com/the-meta-box-generator/
+https://codex.wordpress.org/Function_Reference/add_theme_support
+https://generatewp.com/snippet/EjwVO5p/
+https://generatewp.com/snippet/OvNxvQ5/
+https://www.elegantthemes.com/blog/tips-tricks/how-to-create-wordpress-custom-fields
+http://www.elegantthemes.com/blog/tips-tricks/creating-custom-post-types-in-wordpress
+http://www.wpbeginner.com/wp-tutorials/wordpress-custom-fields-101-tips-tricks-and-hacks/
+https://github.com/WebDevStudios/Custom-Metaboxes-and-Fields-for-WordPress/blob/master/example-functions.php
+http://blog.teamtreehouse.com/adding-custom-fields-to-a-custom-post-type-the-right-way
+https://codex.wordpress.org/Theme_Customization_API
+https://developer.wordpress.org/themes/advanced-topics/customizer-api/
+http://code.tutsplus.com/series/a-guide-to-the-wordpress-theme-customizer--wp-33722
+https://themetrust.com/how-to-create-custom-controls-for-wordpress-theme-customizer/
+https://www.sitepoint.com/getting-started-with-the-wordpress-theme-customization-api/
+
+https://developer.wordpress.org/plugins/shortcodes/shortcodes-with-parameters/
+https://www.advancedcustomfields.com/resources/gallery/
+https://digwp.com/2010/04/call-widget-with-shortcode/
+
+user meta -
+ http://justintadlock.com/archives/2009/09/10/adding-and-using-custom-user-profile-fields
+
+ custome meta content -
+ https://metabox.io/docs/getting-started/, https://wordpress.org/plugins/types/
+ https://www.smashingmagazine.com/2011/10/create-custom-post-meta-boxes-wordpress/
+
+https://developer.wordpress.org/plugins/settings/creating-and-using-options/
+https://codex.wordpress.org/Adding_Administration_Menus
+https://codex.wordpress.org/Creating_Options_Pages
+https://codex.wordpress.org/Roles_and_Capabilities#Capabilities
+
+https://codex.wordpress.org/Class_Reference/WP_User
+
+template tags 
+https://codex.wordpress.org/Template_Tags
+https://codex.wordpress.org/Blog_Design_and_Layout
+
+menu 
+http://wpfirstaid.com/2010/10/extend-the-wordpress-menu/
+http://www.billerickson.net/customizing-wordpress-menus/
+
+themes 
+https://themeshaper.com/
+
+
+extras 
+http://www.wpbeginner.com/plugins/adding-a-post-rating-system-in-wordpress-with-wp-postratings/
+
+wp queries 
+http://web-profile.net/wordpress/themes/wordpress-custom-loop/
+http://wordpress.stackexchange.com/questions/65548/how-to-get-author-id-outside-the-loop
+https://codex.wordpress.org/Database_Description#Table:_wp_posts
+https://thereforei.am/2011/10/28/advanced-taxonomy-queries-with-pretty-urls/
+http://wordpress.stackexchange.com/questions/31254/get-post-count-of-current-loop-when-using-multiple-queries-on-one-page
+http://weblogtoolscollection.com/archives/2007/06/06/global-variables-and-the-wordpress-loop/
+
+theme development 
+http://web-profile.net/wordpress/themes/theme-development/
+https://github.com/SDavisMedia/enterprise-lite/blob/master/inc/customizer.php#L94
+
+
+http://wpsettingsapi.jeroensormani.com/
+http://code.tutsplus.com/tutorials/the-complete-guide-to-the-wordpress-settings-api-part-3-all-about-menus--wp-24749
+
+widgets 
+http://www.wpbeginner.com/wp-tutorials/how-to-create-a-custom-wordpress-widget/
+http://www.wpbeginner.com/beginners-guide/what-why-and-how-tos-of-creating-a-site-specific-wordpress-plugin/
+http://code.tutsplus.com/tutorials/creating-context-sensitive-sidebar-navigation-in-wordpress--cms-22359
+https://premium.wpmudev.org/blog/how-to-build-wordpress-widgets-like-a-pro/?mv=b&utm_expid=3606929-67.KOuGWaEfRS2elZCEv5f8LA.1&utm_referrer=https%3A%2F%2Fwww.google.com.ng%2F
+https://premium.wpmudev.org/blog/create-a-wordpress-widget/?mv=b&utm_expid=3606929-67.KOuGWaEfRS2elZCEv5f8LA.1&utm_referrer=https%3A%2F%2Fwww.google.com.ng%2F
+http://wproots.com/advanced-wordpress-widgets/
+http://www.makeuseof.com/tag/how-to-create-wordpress-widgets/
+http://timtrott.co.uk/wordpress-dashicons-cheat-sheet/
+http://code.tutsplus.com/tutorials/guide-to-creating-your-own-wordpress-editor-buttons--wp-30182
+https://developer.wordpress.org/plugins/settings/individual-options-versus-arrays-of-options/
+https://www.smashingmagazine.com/2012/12/inserting-widgets-with-shortcodes/
+https://www.smashingmagazine.com/2009/02/mastering-wordpress-shortcodes/
+http://wpfirstaid.com/2010/09/the_widget-shortcode-base/
+themes 
+http://timtrott.co.uk/creating-wordpress-themes/
+
+
+styling 
+http://wproots.com/how-to-style-wordpress-menus-dropdowns/
+
+optimizing 
+http://code.tutsplus.com/tutorials/hands-on-improving-google-page-speed--cms-23219
+http://code.tutsplus.com/tutorials/optimizing-google-pagespeed-to-100-in-wordpress--cms-25804
+
+
+https://wordpress.org/support/topic/how-to-a-simple-client-portal
+http://www.beginyourascent.com/creating-wordpress-powered-customer-portal-website/
+https://www.quora.com/How-do-I-create-a-client-portal-in-Wordpress
+https://www.cozmoslabs.com/55726-how-to-wordpress-client-portal-plugin/
+
+https://lesterchan.net/portfolio/programming/php/
+
+http://www.themelab.com/themes/eatery/
+http://www.marchesi.xyz/co16/
+https://themify.me/docs/hooks
+https://www.sitepoint.com/premium/screencasts/handling-wordpress-security
+https://www.sitepoint.com/tag/plugin-development/
+
+forms 
+https://tommcfarlin.com/sending-data-post/
+https://premium.wpmudev.org/blog/how-to-build-your-own-wordpress-contact-form-and-why/
+
+wp files 
+https://core.trac.wordpress.org/browser/tags/4.2.2/src/wp-includes/class-wp.php#L622
+http://wordpress.stackexchange.com/questions/26537/between-functions-php-widgets-and-plugins-which-is-loaded-first
+https://github.com/abhirama/wordpress-example-plugin/blob/master/my-plugin.php
+http://www.codefleet.net/prism-wp/
+https://premium.wpmudev.org/blog/common-wordpress-code-issues/
+https://codex.wordpress.org/Transients_API
+https://css-tricks.com/the-deal-with-wordpress-transients/
+https://scotch.io/tutorials/a-guide-to-transients-in-wordpress
+https://premium.wpmudev.org/blog/upload-file-functions/
+http://www.deluxeblogtips.com/2010/05/howto-meta-box-wordpress.html
+https://metabox.io/docs/get-meta-value/
+https://github.com/tareq1988/wordpress-settings-api-class/blob/master/example/oop-example.php
+
+solve 
+https://wordpress.org/support/topic/add-search-box-to-nav-menu 
+http://stackoverflow.com/questions/4586835/how-to-pass-extra-variables-in-url-with-wordpress
+http://www.rlmseo.com/blog/passing-get-query-string-parameters-in-wordpress-url/
+https://premium.wpmudev.org/blog/building-customized-urls-wordpress/
+http://wordpress.stackexchange.com/tags/template-redirect/hot
+http://diythemes.com/thesis/rtfm/add-search-form-wp-wordpress-nav-menus/
+https://developer.wordpress.org/reference/functions/get_search_form/
+https://paulund.co.uk/display-wordpress-search-form
+https://codex.wordpress.org/Function_Reference/human_time_diff
+http://blog.teamtreehouse.com/create-your-first-wordpress-custom-post-type 
+http://code.tutsplus.com/articles/add-a-custom-column-in-posts-and-custom-post-types-admin-screen--wp-24934
+http://torquemag.io/2016/06/common-wordpress-errors-problems/
+https://wpshout.com/crash-course-ajax-wordpress/
+http://www.problogdesign.com/wordpress/load-next-wordpress-posts-with-ajax/
+http://www.problogdesign.com/wordpress/create-your-own-popular-posts-page/
+https://pippinsplugins.com/creating-custom-front-end-registration-and-login-forms/
+https://www.sitepoint.com/handling-post-requests-the-wordpress-way/
+http://www.wpbeginner.com/plugins/how-to-redirect-users-after-successful-login-in-wordpress/
+https://tommcfarlin.com/redirect-non-admin/
+https://tommcfarlin.com/create-a-user-in-wordpress/
+http://www.flippercode.com/send-html-emails-using-wp-mail-wordpress/
+https://www.smashingmagazine.com/2011/10/create-perfect-emails-wordpress-website/
+http://sltaylor.co.uk/blog/customizing-new-user-email-pluggable-function/
+https://premium.wpmudev.org/blog/wordpress-hooks/?utm_expid=3606929-72.AqocGS0YR5Gn_p3r6t6_AA.0&utm_referrer=https%3A%2F%2Fwww.google.com.ng%2F
+https://premium.wpmudev.org/blog/load-posts-ajax/?hpv=b&utm_expid=3606929-74.aeX0WyvtRVa7qMe8Ph5smw.1&utm_referrer=https%3A%2F%2Fwww.google.com.ng%2F
+https://premium.wpmudev.org/blog/how-to-use-ajax-in-wordpress-to-load-search-results/?hpv=b&utm_expid=3606929-74.aeX0WyvtRVa7qMe8Ph5smw.1&utm_referrer=https%3A%2F%2Fpremium.wpmudev.org%2Fblog%2Fload-posts-ajax%2F%3Fhpv%3Db
+https://premium.wpmudev.org/blog/guide-blog-commenting-wordpress/?hpv=b&utm_expid=3606929-74.aeX0WyvtRVa7qMe8Ph5smw.1&utm_referrer=https%3A%2F%2Fpremium.wpmudev.org%2Fblog%2Fhow-to-use-ajax-in-wordpress-to-load-search-results%2F%3Fhpv%3Db
+https://premium.wpmudev.org/blog/boost-time-on-site-by-auto-loading-new-posts-like-qz-com-and-medium/?hpv=b&utm_expid=3606929-74.aeX0WyvtRVa7qMe8Ph5smw.1&utm_referrer=https%3A%2F%2Fpremium.wpmudev.org%2Fblog%2Fload-posts-ajax%2F%3Fhpv%3Db
+
+wordpress
+1. portal - https://wp-client.com/
+
+wordpress global vars
+https://codex.wordpress.org/Class_Reference/WP_Post
+http://scribu.net/wordpress/the-magic-of-wp_user.html
+https://codex.wordpress.org/Query_Overview --  or http://humanshell.net/2011/08/wordpress-initialization/
+https://codex.wordpress.org/Class_Reference/wpdb
+
+wp shortcodes 
+http://code.tutsplus.com/tutorials/create-a-shortcode-to-list-posts-with-multiple-parameters--wp-32199
+http://www.wprecipes.com/wordpress-shortcode-display-the-loop
+https://codex.wordpress.org/Conditional_Tags
+http://archive.extralogical.net/2007/06/wphooks/
+https://www.sitepoint.com/customizing-wordpress-themes-with-action-hooks/
+http://wpcandy.com/teaches/custom-hooks-and-pluggable-functions/#.V1bWtNIrJdg
+
+wp theme development 
+http://code.tutsplus.com/tutorials/how-theme-frameworks-actually-work--cms-21349
+http://code.tutsplus.com/tutorials/adding-functions-to-your-wordpress-theme-framework--cms-21717
+https://kovshenin.com/2014/child-themes-import/
+http://codex.wordpress.org/Child_Themes
+https://developer.wordpress.org/themes/basics/template-hierarchy/
+http://code.tutsplus.com/categories/theme-development
+http://code.tutsplus.com/tutorials/making-the-perfect-wordpress-theme-introduction--wp-33390
+https://make.wordpress.org/core/handbook/best-practices/coding-standards/
+https://make.wordpress.org/core/handbook/best-practices/coding-standards/javascript/
+https://tommcfarlin.com/php-codesniffer-with-composer/
+http://tgmpluginactivation.com/
+http://code.tutsplus.com/series/creating-a-wordpress-theme-from-static-html--wp-34294
+http://wpdean.com/wordpress-starter-themes/
+http://wpdean.com/how-to-translate-a-wordpress-theme/
+http://www.mojo-themes.com/item/myway-wordpress/?r=jkaffl
+http://organicthemes.com/
+http://code.tutsplus.com/tutorials/how-to-integrate-bootstrap-navbar-into-wordpress-theme--wp-33410
+http://justintadlock.com/archives/2010/12/30/wordpress-theme-function-files
+http://justintadlock.com/archives/2010/11/17/how-to-load-files-within-wordpress-themes
+http://themereview.co/prefix-all-the-things
+https://github.com/grappler/wp-standard-handles
+http://justintadlock.com/archives/2014/11/03/loading-parent-styles-for-child-themes
+http://codex.wordpress.org/Custom_Backgrounds
+http://codex.wordpress.org/Theme_Development
+http://codex.wordpress.org/Validating_a_Website
+http://codex.wordpress.org/Writing_Code_in_Your_Posts
+https://premium.wpmudev.org/blog/creating-custom-page-templates-in-wordpress/
+https://www.smashingmagazine.com/2015/06/wordpress-custom-page-templates/
+https://www.smashingmagazine.com/2016/01/create-customize-wordpress-child-theme/
+https://codex.wordpress.org/CSS
+https://codex.wordpress.org/WordPress_Lessons#Designing_Your_WordPress_Site
+http://www.wpbeginner.com/wp-themes/default-wordpress-generated-css-cheat-sheet-for-beginners/
+https://digwp.com/2010/05/default-wordpress-css-styles-hooks/
+
+using less
+http://code.tutsplus.com/tutorials/using-css-preprocessors-with-wordpress-less-structures--wp-31533
+http://www.noeltock.com/web-design/wordpress/using-less-with-wordpress/
+http://leafo.net/lessphp/docs/
+
+https://roots.io/
+https://roots.io/using-composer-with-wordpress/
+
+
+
+https://codex.wordpress.org/Function_Reference
+
+hooks reference 
+https://codex.wordpress.org/Plugin_API/Action_Reference
+http://rickrduncan.com/wordpress/white-label-wordpress
+https://www.packtpub.com/books/content/anatomy-wordpress-plugin
+
+plugin development 
+http://code.tutsplus.com/articles/how-to-use-wordpress-color-picker-api--wp-33067
+http://jameskoster.co.uk/work/using-wordpress-3-8s-dashicons-theme-plugin/
+https://pippinsplugins.com/playing-nice-with-the-content-filter/
+https://pippinsplugins.com/a-quick-introduction-to-using-filters/
+http://codex.wordpress.org/Plugin_API/Action_Reference/pre_get_posts
+https://pippinsplugins.com/custom-database-api-the-basic-api-class/
+https://pippinsplugins.com/using-filters-to-alter-html-output/
+http://code.tutsplus.com/tutorials/custom-database-tables-creating-the-table--wp-28124
+http://codex.wordpress.org/Writing_a_Plugin
+http://planetozh.com/blog/2009/09/top-10-most-common-coding-mistakes-in-wordpress-plugins/
+http://codex.wordpress.org/Plugin_Resources
+http://www.yaconiello.com/blog/how-to-write-wordpress-plugin/
+http://www.yaconiello.com/blog/how-to-write-wordpress-plugin/
+http://solislab.com/blog/plugin-activation-checklist/
+https://www.sitepoint.com/unleash-the-power-of-the-wordpress-shortcode-api/
+https://www.sitepoint.com/adding-a-media-button-to-the-content-editor/
+https://www.smashingmagazine.com/2012/05/wordpress-shortcodes-complete-guide/
+http://code.tutsplus.com/tutorials/writing-extensible-plugins-with-actions-and-filters--wp-26759
+https://codex.wordpress.org/WordPress_Query_Vars#Query_variables
+https://www.smashingmagazine.com/2016/03/advanced-wordpress-search-with-wp_query/#her-majesty-the-wp_query
+https://www.smashingmagazine.com/2016/04/three-approaches-to-adding-configurable-fields-to-your-plugin/
+https://codex.wordpress.org/Determining_Plugin_and_Content_Directories
+http://blog.ashfame.com/2010/11/add-custom-field-registration-wordpress/
+https://codex.wordpress.org/Function_Reference/get_term_by
+https://carlalexander.ca/give-wordpress-an-apple-experience/
+https://en.bainternet.info/wordpress-taxonomies-extra-fields-the-easy-way/
+https://www.sitepoint.com/wordpress-plugin-updates-right-way/?utm_source=sitepoint&utm_medium=relatedsidebar&utm_term=wordpress
+Chttps://en.bainternet.info/how-i-add-a-wordpress-metabox/
+https://github.com/WebDevStudios/CMB2/wiki/Basic-Usage
+http://www.slideshare.net/andrewnacin/you-dont-know-query-wordcamp-portland-2011
+http://www.billerickson.net/custom-wordpress-queries/#comment-674034
+https://wordpress.org/support/topic/plugin-interstrategy-events-manager-documentation
+http://www.billerickson.net/wordpress-metaboxes/
+https://github.com/WebDevStudios/CMB2/wiki/Bringing-Metaboxes-to-the-Front-End
+https://piklist.com/learn/doc/getting-started-piklist/
+http://www.webtechideas.in/sorting-posts-by-meta-key-and-value/
+https://wpshout.com/wordpress-submit-posts-from-frontend/
+
+
+ajax 
+https://www.jackreichert.com/2013/03/using-ajax-in-wordpress-development-the-quickstart-guide/
+https://codex.wordpress.org/AJAX_in_Plugins
+https://pippinsplugins.com/using-ajax-your-plugin-wordpress-admin/
+
+shortcodes 
+https://codex.wordpress.org/Shortcode_API
+http://code.tutsplus.com/articles/resource-roundup-20-creative-shortcodes-to-use-in-your-projects--wp-20261
+
+functions 
+https://codex.wordpress.org/Function_Reference/wp_parse_args
+https://codex.wordpress.org/Function_Reference/shortcode_atts
+
+css 
+https://www.smashingmagazine.com/2011/12/an-introduction-to-object-oriented-css-oocss/
+
+website performance 
+https://developer.yahoo.com/performance/rules.html
+
+wpbeginner
+http://www.wpbeginner.com/wp-tutorials/how-to-create-a-multi-page-form-in-wordpress/
+http://www.wpbeginner.com/beginners-guide/19-actionable-tips-to-drive-traffic-to-your-new-wordpress-site/
+http://www.wpbeginner.com/beginners-guide/15-most-annoying-things-about-wordpress-and-how-to-fix-them/
+
+hooks 
+http://wordpress.stackexchange.com/questions/55924/when-to-use-add-actioninit-vs-add-actionwp-enqueue-scripts
+http://code.tutsplus.com/articles/wordpress-initialization-hooks-benefits-and-common-mistakes--wp-34427
+
+
+wp developer 
+https://developer.wordpress.org/reference/functions/get_user_by/
+
+wp error 
+https://www.sitepoint.com/an-introduction-to-the-wp-error-class/
+http://journal.rmccue.io/165/why-wp_error-sucks/
+https://github.com/LucaRosaldi/wpfn-notifications/blob/master/class.wpfn-notification.php
+http://code.tutsplus.com/tutorials/wordpress-error-handling-with-wp_error-class-ii--cms-21142
+https://codex.wordpress.org/Debugging_in_WordPress
+https://www.elegantthemes.com/blog/tips-tricks/using-the-wordpress-debug-log
+http://www.wp-fun.co.uk/2008/01/20/using-objects-with-wordpress-plugins-p-3/
+http://weblogtoolscollection.com/archives/2008/05/04/error-management-for-wordpress-plugins/
+
+
+importan wp sites 
+https://tommcfarlin.com/category/articles/page/3/
+http://tutsplus.com/authors/tom-mcfarlin
+http://blog.ashfame.com/page/3/
+http://wptheming.com/2016/02/query-by-jetpack-related-posts/
+http://www.wpbeginner.com/wp-tutorials/10-most-wanted-category-hacks-and-plugins-for-wordpress/
+https://webdevstudios.com/blog/
+https://managewp.com/blogs/tutorials
+http://web-profile.net/wordpress/dev/wordpress-custom-field-to-post/
+https://codex.wordpress.org/Class_Reference/WP_User_Query
+https://www.sitepoint.com/sanitizing-escaping-validating-data-in-wordpress/
+https://www.sitepoint.com/preventing-brute-force-attacks-against-wordpress-websites/
+https://www.sitepoint.com/building-a-domain-whois-and-social-data-wordpress-widget/
+https://www.sitepoint.com/no-captcha-integration-wordpress/
+https://vip.wordpress.com/documentation/vip/code-review-what-we-look-for/
+http://devotepress.com/tutorials-hacks/wordpress-coding/when-to-use-pre_get_posts-in-wordpress/
+https://codex.wordpress.org/Function_Reference/wp_nonce_field
+https://mikejolley.com/2016/04/21/showing-quantity-inputs-in-woocommerce-loops/
+https://connekthq.com/plugins/ajax-load-more/
+http://code.tutsplus.com/articles/getting-loopy-ajax-powered-loops-with-jquery-and-wordpress--wp-23232
+http://www.codeinwp.com/blog/load-old-wordpress-posts-on-the-same-page-with-ajax/
+http://justintadlock.com/archives/2010/06/01/goodbye-headaches-hello-menus
+http://line25.com/articles/10-html-tag-crimes-you-really-shouldnt-commit
+http://line25.com/articles/15-tutorials-to-help-you-build-wordpress-themes
+http://justintadlock.com/archives/2010/04/29/custom-post-types-in-wordpress
+http://www.wpbeginner.com/plugins/how-to-properly-add-your-business-address-in-wordpress/
+https://kwight.ca/2012/12/02/adding-a-logo-uploader-to-your-wordpress-site-with-the-theme-customizer/
+http://ottopress.com/tag/customizer/
+https://kirki.org/docs/getting-started/fields.html
+
+wp qeries 
+https://codex.wordpress.org/Class_Reference/WP_User_Query
+https://pippinsplugins.com/storing-session-data-in-wordpress-without-_session/
+https://tommcfarlin.com/set-cookies-wordpress/
+https://premium.wpmudev.org/blog/set-get-delete-cookies/
+https://codepen.io/the_ruther4d/post/custom-query-string-vars-in-wordpress
+
+wp comments
+https://core.trac.wordpress.org/browser/tags/4.5/src/wp-includes/comment-template.php#L1250
+https://developer.wordpress.org/themes/template-files-section/partial-and-miscellaneous-template-files/comments/
+https://themeshaper.com/2012/11/04/the-wordpress-theme-comments-template/
+http://www.wpexplorer.com/better-wordpress-comments/
+http://www.wpexplorer.com/successful-online-store/
+http://www.wpexplorer.com/secure-wordpress-authentication-plugins/
+
+wordpress template sample 
+http://snippi.com/s/qdxof12
+
+responsive design 
+http://torquemag.io/2016/05/make-wordpress-theme-responsive/
+https://varvy.com/mobile/legible-font-size.html
+
+jquery plugins 
+menu 
+https://www.berriart.com/sidr/
+http://magnigenie.com/10-simple-bootstrap-plugin-make-life-easy/
+https://github.com/flaviovs/jquery.exitintent
+http://jquery.malsup.com/form/
+http://stackoverflow.com/questions/3514784/what-is-the-best-way-to-detect-a-mobile-device-in-jquery
+https://www.sitepoint.com/detect-mobile-devices-jquery/
+https://www.sitepoint.com/web-foundations/making-simple-image-slider-html-css-jquery/
+https://github.com/thesmart/jquery-scrollspy/blob/master/example/example-1.html
+flexslider - http://flexslider.woothemes.com/thumbnail-controlnav.html, https://woocommerce.com/flexslider/
+https://github.com/noelboss/featherlight/#usage
+
+https://managewp.com/create-custom-user-roles-wordpress
+
+widgets
+https://paulund.co.uk/add-upload-media-library-widgets
+http://code.tutsplus.com/articles/how-to-integrate-the-wordpress-media-uploader-in-theme-and-plugin-options--wp-26052
+http://vedmant.com/using-wordpress-media-library-in-widgets-options/
+http://wordpress.stackexchange.com/questions/98426/use-media-upload-in-custom-widget-on-wordpress-3-5/98473#98473
+https://www.inkthemes.com/code-to-integrate-wordpress-media-uploader-in-plugintheme/
+http://qnimate.com/post-series/using-wordpress-media-uploader-in-plugins-and-themes/
+http://code.tutsplus.com/articles/how-to-integrate-the-wordpress-media-uploader-in-theme-and-plugin-options--wp-26052
+
+LESS
+https://designshack.net/articles/css/introducing-the-less-css-grid/
+
+http://w3guy.com/simple-form-validation-php-array/

@@ -1,0 +1,21 @@
+to change my identity //
+dbcc checkident ('students_profile', reseed, 1000)
+
+
+
+alter table students_profile add constraint students_profile_username_unique unique (username)
+
+
+//mysql //
+ALTER TABLE table_name MODIFY COLUMN column_name TIMESTAMP NOT NULL DEFAULT current_timestamp;
+
+ALTER TABLE foobar_data CHANGE COLUMN col col VARCHAR(255) NOT NULL DEFAULT '{}';
+
+ALTER TABLE foobar_data MODIFY COLUMN col VARCHAR(255) NOT NULL DEFAULT '{}';
+
+
+
+//php //
+function truncate($string, $length, $dots = "...") {
+    return (strlen($string) > $length) ? substr($string, 0, $length - strlen($dots)) . $dots : $string;
+}

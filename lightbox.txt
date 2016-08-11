@@ -1,0 +1,247 @@
+jQuery(document).ready(function($) {
+  
+  // global variables for script
+  var current, size;
+  
+  $('.lightboxTrigger').click(function(e) {
+    
+    // prevent default click event
+    e.preventDefault();
+    
+    // grab href from clicked element
+    var image_href = $(this).attr("href");  
+    
+    // determine the index of clicked trigger
+    var slideNum = $('.lightboxTrigger').index(this);
+    
+    // find out if #lightbox exists
+    if ($('#lightbox').length > 0) {        
+      // #lightbox exists
+      $('#lightbox').fadeIn(300);
+      // #lightbox does not exist - create and insert (runs 1st time only)
+    } else {                                
+      // create HTML markup for lightbox window
+      var lightbox =
+          '<div id="lightbox">' +
+          '<p>Click to close</p>' +
+          '<div id="slideshow">' +
+          '<ul></ul>' +        
+          '<div class="nav">' +
+          '<a href="#prev" class="prev slide-nav">prev</a>' +
+          '<a href="#next" class="next slide-nav">next</a>' +
+          '</div>' +
+          '</div>' +
+          '</div>';
+      
+      //insert lightbox HTML into page
+      $('body').append(lightbox);
+      
+      // fill lightbox with .lightboxTrigger hrefs in #imageSet
+      $('#imageSet').find('.lightboxTrigger').each(function() {
+        var $href = $(this).attr('href');
+        $('#slideshow ul').append(
+          '<li>' +
+          '<img src="' + $href + '">' +
+          '</li>'
+        );
+      });
+      
+    }
+    
+    // setting size based on number of objects in slideshow
+    size = $('#slideshow ul > li').length;
+    
+    // hide all slide, then show the selected slide
+    $('#slideshow ul > li').hide();
+    $('#slideshow ul > li:eq(' + slideNum + ')').show();
+    
+    // set current to selected slide
+    current = slideNum;
+  });
+  
+  //Click anywhere on the page to get rid of lightbox window
+  $('body').on('click', '#lightbox', function() { // using .on() instead of .live(). more modern, and fixes event bubbling issues
+    $('#lightbox').fadeOut(300);
+  });
+  
+  // show/hide navigation when hovering over #slideshow
+  $('body').on(
+    { mouseenter: function() {
+      $('.nav').fadeIn(300);
+    }, mouseleave: function() {
+      $('.nav').fadeOut(300);
+    }
+    },'#slideshow');
+  
+  // navigation prev/next
+  $('body').on('click', '.slide-nav', function(e) {
+    
+    // prevent default click event, and prevent event bubbling to prevent lightbox from closing
+    e.preventDefault();
+    e.stopPropagation();
+    
+    var $this = $(this);
+    var dest;
+    
+    // looking for .prev
+    if ($this.hasClass('prev')) {
+      dest = current - 1;
+      if (dest < 0) {
+        dest = size - 1;
+      }
+    } else {
+      // in absence of .prev, assume .next
+      dest = current + 1;
+      if (dest > size - 1) {
+        dest = 0;
+      }
+    }
+    
+    // fadeOut curent slide, FadeIn next/prev slide
+    $('#slideshow ul > li:eq(' + current + ')').fadeOut(750);
+    $('#slideshow ul > li:eq(' + dest + ')').fadeIn(750);
+    
+    // update current slide
+    current = dest;
+  });
+  
+});
+
+window.location.assign("http://www.w3schools.com")
+
+"Cookies enabled is " + navigator.cookieEnabled;
+
+
+<div class="row">
+  <div class="col-sm-5 col-md-6">.col-sm-5 .col-md-6</div>
+  <div class="col-sm-5 col-sm-offset-2 col-md-6 col-md-offset-0">
+  .col-sm-5 .col-sm-offset-2 .col-md-6 .col-md-offset-0</div>
+</div>
+
+<div class="row">
+  <div class="col-xs-6 col-sm-3">
+    Column 1
+    <br>
+    Resize the browser window to see the effect.
+  </div>
+  <div class="col-xs-6 col-sm-3">Column 2</div>
+  <!-- Add clearfix for only the required viewport -->
+  <div class="clearfix visible-xs"></div>
+  <div class="col-xs-6 col-sm-3">Column 3</div>
+  <div class="col-xs-6 col-sm-3">Column 4</div>
+</div>
+
+ <div class="checkbox">
+          <label><input type="checkbox"> Remember me</label>
+        </div>
+<label class="checkbox-inline">
+      <input type="checkbox" value="">Option 1
+    </label>
+    <label class="checkbox-inline">
+      <input type="checkbox" value="">Option 2
+    </label>
+    <label class="checkbox-inline">
+      <input type="checkbox" value="">Option 3
+    </label>
+	
+<i class="fa fa-quote-left fa-3x fa-pull-left fa-border" aria-hidden="true"></i>
+...tomorrow we will run faster, stretch out our arms farther...
+And then one fine morning— So we beat on, boats against the
+current, borne back ceaselessly into the past.
+input[type=checkbox]
+{
+  /* Double-sized Checkboxes */
+  -ms-transform: scale(2); /* IE */
+  -moz-transform: scale(2); /* FF */
+  -webkit-transform: scale(2); /* Safari and Chrome */
+  -o-transform: scale(2); /* Opera */
+  padding: 10px;
+}
+
+
+lasses	Extra small devices Phones (<768px)	Small devices Tablets (≥768px)	Medium devices Desktops (≥992px)	Large devices Desktops (≥1200px)
+.visible-xs-*	Visible	Hidden	Hidden	Hidden
+.visible-sm-*	Hidden	Visible	Hidden	Hidden
+.visible-md-*	Hidden	Hidden	Visible	Hidden
+.visible-lg-*	Hidden	Hidden	Hidden	Visible
+.hidden-xs	Hidden	Visible	Visible	Visible
+.hidden-sm	Visible	Hidden	Visible	Visible
+.hidden-md	Visible	Visible	Hidden	Visible
+.hidden-lg	Visible	Visible	Visible	Hidden
+
+
+<h2>Example</h2>
+<p>Resize this page to see how the text below changes:</p>
+<h1 class="visible-xs">This text is shown only on an EXTRA SMALL screen.</h1>
+<h1 class="visible-sm">This text is shown only on a SMALL screen.</h1>
+<h1 class="visible-md">This text is shown only on a MEDIUM screen.</h1>
+<h1 class="visible-lg">This text is shown only on a LARGE screen.</h1>
+Result:
+
+<i class="fa fa-spinner fa-spin fa-3x fa-fw margin-bottom"></i>
+<span class="sr-only">Loading...</span>
+
+<i class="fa fa-circle-o-notch fa-spin fa-3x fa-fw margin-bottom"></i>
+<span class="sr-only">Loading...</span>
+
+<i class="fa fa-refresh fa-spin fa-3x fa-fw margin-bottom"></i>
+<span class="sr-only">Loading...</span>
+
+<i class="fa fa-cog fa-spin fa-3x fa-fw margin-bottom"></i>
+<span class="sr-only">Loading...</span>
+
+<i class="fa fa-spinner fa-pulse fa-3x fa-fw margin-bottom"></i>
+<span class="sr-only">Loading...</span>
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+body{
+overflow: hidden;
+}
+div {
+    opacity: 0;
+    padding: 30px;
+    border: 3px solid;
+    position: relative;
+    -webkit-animation-name: example; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
+    -webkit-animation-iteration-count: infinite; /* Chrome, Safari, Opera */
+    -webkit-animation-direction: alternate; /* Chrome, Safari, Opera */
+    animation-name: example;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;    
+    transform: scale(0,0); /* Standard syntax */
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes example {
+   
+}
+
+/* Standard syntax */
+@keyframes example {
+   0%{opacity:0.3;}
+   50%{opacity:0.6;}
+   100%{opacity:1;transform: scale(1,1);  }
+}
+</style>
+</head>
+<body>
+
+<p><b>Note:</b> This example does not work in Internet Explorer 9 and earlier versions.</p>
+
+<div>
+<p> I'm coming home </p>
+<p> they will see me coming home and they will scream my name loud <br/>
+if they say your name, its just coz of ur fame 
+</p>
+</div>
+
+</body>
+</html>
