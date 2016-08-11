@@ -88,6 +88,7 @@ http://wpdean.com/html5-wordpress-themes/
 
 child themes 
 https://www.smashingmagazine.com/2016/01/create-customize-wordpress-child-theme/
+http://www.kevinleary.net/wordpress-dashicons-list-custom-post-type-icons/
 
 
 codex 
