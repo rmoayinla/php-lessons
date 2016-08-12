@@ -117,6 +117,7 @@ https://digwp.com/2010/04/call-widget-with-shortcode/
 
 user meta -
  http://justintadlock.com/archives/2009/09/10/adding-and-using-custom-user-profile-fields
+ https://github.com/bainternet/Tax-Meta-Class/blob/master/class-usage-demo.php
 
  custome meta content -
  https://metabox.io/docs/getting-started/, https://wordpress.org/plugins/types/
@@ -126,6 +127,7 @@ https://developer.wordpress.org/plugins/settings/creating-and-using-options/
 https://codex.wordpress.org/Adding_Administration_Menus
 https://codex.wordpress.org/Creating_Options_Pages
 https://codex.wordpress.org/Roles_and_Capabilities#Capabilities
+https://paulund.co.uk/add-custom-meta-taxonomies
 
 https://codex.wordpress.org/Class_Reference/WP_User
 
