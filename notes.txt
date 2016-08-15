@@ -129,6 +129,7 @@ https://codex.wordpress.org/Creating_Options_Pages
 https://codex.wordpress.org/Roles_and_Capabilities#Capabilities
 https://paulund.co.uk/add-custom-meta-taxonomies
 
+
 https://codex.wordpress.org/Class_Reference/WP_User
 
 template tags 
@@ -479,5 +480,9 @@ http://code.tutsplus.com/articles/how-to-integrate-the-wordpress-media-uploader-
 
 LESS
 https://designshack.net/articles/css/introducing-the-less-css-grid/
+https://css-tricks.com/almanac/properties/f/filter/
 
 http://w3guy.com/simple-form-validation-php-array/
+
+sublime text 
+https://github.com/Automattic/sublime-jsfmt
