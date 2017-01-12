@@ -1,0 +1,62 @@
+// a sample theme architecture //
+<html>
+<head>-----------------------------------------------------------|
+<title> </title>-------------------------------------------------|-- all this goes in header.php
+<?php wp_head() //hook // ?>-------------------------------------|
+<body>------------------------------------------------------------|
+<?php-------------------------------------------------------------|
+// action hook for any content placed before the header, including the widget area
+do_action ( 'wptp_before_header' ); //custome hook for my theme for header content //
+?>
+----------------------------------------------------
+<div class="half right">
+    <!-- This area is by default in the top right of the header. It contains contact details and is also where you might add social media or RSS links -->
+ 
+    <?php
+    // action hook for any content placed inside the right hand header, including the widget area.
+    do_action ( 'wptp_in_header' );//another theme custom hook 
+    ?>
+</div> <!-- .half right -->
+
+you can also create custom hooks for your navigation 
+<?php do_action('wp_theme_nav'); ?>//so any function hooked here will display the nav //
+<!-- end of header.php -->
+
+
+<main>//main content goes here, this is where the loop will be 
+<div id="content">
+<?php
+// action hook for any content placed before the content, including the widget area
+do_action ( 'wptp_before_content' ); // this hook can insert content before the loop starts //
+?>
+//loop//
+//loop//
+//loop//
+</div>
+<div class='sidebar'>//sidebar //
+<?php
+// action hook for any content placed in the sidebar, including the widget area
+do_action ( 'wptp_sidebar' );//this hook will insert content, this can be ads, widget area, menu or anything 
+?>
+</div>
+
+
+<?php
+// action hook for any content placed after the content, including the widget area
+do_action ( 'wptp_after_content' ); //this hook will insert content after the original site content, this can insert a widget area, ads or anything 
+?>
+
+
+<footer>//site footer
+<?php
+// action hook for any content placed before the content, including the widget area
+do_action ( 'wptp_footer' );// this will insert the footer content which can be anything just as above 
+?>
+
+</footer>
+<div id="after-footer">//this is any extra content we want after the footer
+<?php
+// action hook for any content placed before the content, including the widget area
+do_action ( 'wptp_after_footer' );//then the hook e.g. display &copy powered by wordpress 
+?>
+</div>

@@ -26,6 +26,7 @@
 21. php code sniffer - https://github.com/squizlabs/PHP_CodeSniffer/wiki/Fixing-Errors-Automatically
 22. https://dashboard.pantheon.io/users/cfca5c58-4840-4fd0-bdac-9341fde75ea5#sites/list
 23. pastebin - http://pastebin.com/
+24. http://squaresend.com/docs#APIReference
 http://snippi.com/s/
 https://shiftedit.net/
 
@@ -36,9 +37,10 @@ https://shiftedit.net/
 2. scroll anim - http://johnpolacek.github.io/superscrollorama/
 	
 
-
-
-
+wp organisiging content
+http://www.wpbeginner.com/beginners-guide/categories-vs-tags-seo-best-practices-which-one-is-better/
+https://wp-types.com/documentation/customizing-sites-using-php/creating-taxonomy-term-archives/
+https://premium.wpmudev.org/blog/powerful-must-have-tools-for-every-wordpress-developer/?mksi=b&utm_expid=3606929-94.SWGkQ9hyQQGxJNtgEiBgWA.1&utm_referrer=https%3A%2F%2Fpremium.wpmudev.org%2Fblog%2Fcreating-custom-taxonomies-wordpress%2F%3Fmksi%3Db
 
 
 tools 
@@ -128,8 +130,9 @@ https://codex.wordpress.org/Adding_Administration_Menus
 https://codex.wordpress.org/Creating_Options_Pages
 https://codex.wordpress.org/Roles_and_Capabilities#Capabilities
 https://paulund.co.uk/add-custom-meta-taxonomies
+https://premium.wpmudev.org/blog/using-ajax-with-wordpress/?rad=b&utm_expid=3606929-86.PHoDXYJeQYmWFQIujGOFZg.1&utm_referrer=https%3A%2F%2Fwww.google.com%2F
 
-
+http://www.wpbeginner.com/beginners-guide/how-to-find-royalty-free-images-for-your-wordpress-blog-posts/
 https://codex.wordpress.org/Class_Reference/WP_User
 
 template tags 
@@ -146,6 +149,8 @@ https://themeshaper.com/
 
 extras 
 http://www.wpbeginner.com/plugins/adding-a-post-rating-system-in-wordpress-with-wp-postratings/
+https://www.smashingmagazine.com/2009/09/how-to-integrate-facebook-with-wordpress/
+https://codex.wordpress.org/Taxonomies
 
 wp queries 
 http://web-profile.net/wordpress/themes/wordpress-custom-loop/
@@ -205,6 +210,8 @@ https://www.sitepoint.com/tag/plugin-development/
 forms 
 https://tommcfarlin.com/sending-data-post/
 https://premium.wpmudev.org/blog/how-to-build-your-own-wordpress-contact-form-and-why/
+https://premium.wpmudev.org/blog/35-resources-for-kick-ass-wordpress-developers/
+https://premium.wpmudev.org/blog/120-free-premium-wordpress-themes/
 
 wp files 
 https://core.trac.wordpress.org/browser/tags/4.2.2/src/wp-includes/class-wp.php#L622
@@ -219,6 +226,8 @@ https://premium.wpmudev.org/blog/upload-file-functions/
 http://www.deluxeblogtips.com/2010/05/howto-meta-box-wordpress.html
 https://metabox.io/docs/get-meta-value/
 https://github.com/tareq1988/wordpress-settings-api-class/blob/master/example/oop-example.php
+https://core.trac.wordpress.org/browser/tags/4.1/src/wp-includes/link-template.php#L2343
+https://codex.wordpress.org/Making_Custom_Queries_using_Offset_and_Pagination
 
 solve 
 https://wordpress.org/support/topic/add-search-box-to-nav-menu 
@@ -249,6 +258,12 @@ https://premium.wpmudev.org/blog/load-posts-ajax/?hpv=b&utm_expid=3606929-74.aeX
 https://premium.wpmudev.org/blog/how-to-use-ajax-in-wordpress-to-load-search-results/?hpv=b&utm_expid=3606929-74.aeX0WyvtRVa7qMe8Ph5smw.1&utm_referrer=https%3A%2F%2Fpremium.wpmudev.org%2Fblog%2Fload-posts-ajax%2F%3Fhpv%3Db
 https://premium.wpmudev.org/blog/guide-blog-commenting-wordpress/?hpv=b&utm_expid=3606929-74.aeX0WyvtRVa7qMe8Ph5smw.1&utm_referrer=https%3A%2F%2Fpremium.wpmudev.org%2Fblog%2Fhow-to-use-ajax-in-wordpress-to-load-search-results%2F%3Fhpv%3Db
 https://premium.wpmudev.org/blog/boost-time-on-site-by-auto-loading-new-posts-like-qz-com-and-medium/?hpv=b&utm_expid=3606929-74.aeX0WyvtRVa7qMe8Ph5smw.1&utm_referrer=https%3A%2F%2Fpremium.wpmudev.org%2Fblog%2Fload-posts-ajax%2F%3Fhpv%3Db
+http://www.wpbeginner.com/wp-tutorials/how-to-add-custom-styles-to-wordpress-visual-editor/
+http://wesbos.com/custom-wordpress-tinymce-wysiwyg-classes/
+https://code.tutsplus.com/tutorials/adding-custom-styles-in-wordpress-tinymce-editor--wp-24980
+http://wordpress.stackexchange.com/questions/72394/how-to-add-a-shortcode-button-to-the-tinymce-editor
+http://qnimate.com/adding-buttons-to-wordpress-visual-editor/
+https://code.tutsplus.com/tutorials/guide-to-creating-your-own-wordpress-editor-buttons--wp-30182
 
 wordpress
 1. portal - https://wp-client.com/
@@ -295,6 +310,7 @@ http://codex.wordpress.org/Theme_Development
 http://codex.wordpress.org/Validating_a_Website
 http://codex.wordpress.org/Writing_Code_in_Your_Posts
 https://premium.wpmudev.org/blog/creating-custom-page-templates-in-wordpress/
+http://andorwp.com/custom-post-and-page-templates-in-wordpress/
 https://www.smashingmagazine.com/2015/06/wordpress-custom-page-templates/
 https://www.smashingmagazine.com/2016/01/create-customize-wordpress-child-theme/
 https://codex.wordpress.org/CSS
@@ -313,6 +329,11 @@ https://roots.io/using-composer-with-wordpress/
 
 
 https://codex.wordpress.org/Function_Reference
+https://www.smashingmagazine.com/2015/12/how-to-use-term-meta-data-in-wordpress/
+http://themehybrid.com/weblog/introduction-to-wordpress-term-meta
+https://github.com/bainternet/Tax-Meta-Class
+https://github.com/bainternet/My-Meta-Box/blob/master/class-usage-demo.php
+https://en.bainternet.info/wordpress-taxonomies-extra-fields-the-easy-way/
 
 hooks reference 
 https://codex.wordpress.org/Plugin_API/Action_Reference
@@ -321,7 +342,9 @@ https://www.packtpub.com/books/content/anatomy-wordpress-plugin
 
 plugin development 
 http://code.tutsplus.com/articles/how-to-use-wordpress-color-picker-api--wp-33067
+https://premium.wpmudev.org/blog/object-oriented-plugins/?sul=b&utm_expid=3606929-90.6a_uo883STWy99lnGf8x1g.1&utm_referrer=https%3A%2F%2Fpremium.wpmudev.org%2Fblog%2Fset-get-delete-cookies%2F
 http://jameskoster.co.uk/work/using-wordpress-3-8s-dashicons-theme-plugin/
+https://premium.wpmudev.org/blog/how-to-ease-the-load-of-sending-email-from-wordpress/?sul=b&utm_expid=3606929-90.6a_uo883STWy99lnGf8x1g.1&utm_referrer=https%3A%2F%2Fpremium.wpmudev.org%2Fblog%2Fhow-to-highlight-new-content-for-returning-visitors%2F%3Fsul%3Db
 https://pippinsplugins.com/playing-nice-with-the-content-filter/
 https://pippinsplugins.com/a-quick-introduction-to-using-filters/
 http://codex.wordpress.org/Plugin_API/Action_Reference/pre_get_posts
@@ -390,6 +413,8 @@ http://code.tutsplus.com/articles/wordpress-initialization-hooks-benefits-and-co
 
 wp developer 
 https://developer.wordpress.org/reference/functions/get_user_by/
+https://core.trac.wordpress.org/browser/tags/4.5.3/src/wp-includes/author-template.php#L0
+
 
 wp error 
 https://www.sitepoint.com/an-introduction-to-the-wp-error-class/
@@ -430,7 +455,33 @@ http://justintadlock.com/archives/2010/04/29/custom-post-types-in-wordpress
 http://www.wpbeginner.com/plugins/how-to-properly-add-your-business-address-in-wordpress/
 https://kwight.ca/2012/12/02/adding-a-logo-uploader-to-your-wordpress-site-with-the-theme-customizer/
 http://ottopress.com/tag/customizer/
-https://kirki.org/docs/getting-started/fields.html
+https://kirki.org/docs/getting-started/fields.html\
+http://www.wpbeginner.com/showcase/x-type-of-websites-you-can-create-with-wordpress/
+https://pantheon.io/why-your-site-slow-recording
+https://core.trac.wordpress.org/browser/tags/4.5.3/src/wp-includes/post.php#L0
+http://www.rexegg.com/regex-php.html
+http://scotty-t.com/2012/01/20/wordpress-memcached/
+
+post formats 
+https://www.elegantthemes.com/blog/tips-tricks/how-to-create-wordpress-post-formats
+https://codex.wordpress.org/Function_Reference/get_post_format
+http://www.wpbeginner.com/wp-tutorials/how-to-create-a-photo-album-gallery-in-wordpress-without-a-plugin/
+https://core.trac.wordpress.org/browser/tags/4.5.3/src/wp-includes/media.php#L0
+https://www.smashingmagazine.com/2012/11/complete-guide-custom-post-types/
+
+wp options 
+https://developer.wordpress.org/reference/functions/get_option/
+https://codex.wordpress.org/Option_Reference
+https://designmodo.com/wordpress-https/
+https://designmodo.com/web-performance-wordpress/
+https://designmodo.com/social-share-count-wordpress/
+http://dsgnwrks.pro/how-to/post-meta-lets-make-something/
+https://code.tutsplus.com/tutorials/loading-css-into-wordpress-the-right-way--cms-20402
+http://www.hongkiat.com/blog/wordpress-url-rewrite/
+https://paulund.co.uk/rewrite-urls-wordpress
+
+archive template 
+https://www.smashingmagazine.com/2015/04/building-custom-wordpress-archive-page/
 
 wp qeries 
 https://codex.wordpress.org/Class_Reference/WP_User_Query
@@ -438,6 +489,7 @@ https://pippinsplugins.com/storing-session-data-in-wordpress-without-_session/
 https://tommcfarlin.com/set-cookies-wordpress/
 https://premium.wpmudev.org/blog/set-get-delete-cookies/
 https://codepen.io/the_ruther4d/post/custom-query-string-vars-in-wordpress
+http://wpengineer.com/2258/change-the-search-url-of-wordpress/
 
 wp comments
 https://core.trac.wordpress.org/browser/tags/4.5/src/wp-includes/comment-template.php#L1250
@@ -446,6 +498,8 @@ https://themeshaper.com/2012/11/04/the-wordpress-theme-comments-template/
 http://www.wpexplorer.com/better-wordpress-comments/
 http://www.wpexplorer.com/successful-online-store/
 http://www.wpexplorer.com/secure-wordpress-authentication-plugins/
+https://premium.wpmudev.org/blog/set-get-delete-cookies/
+https://www.smashingmagazine.com/2012/05/adding-custom-fields-in-wordpress-comment-form/
 
 wordpress template sample 
 http://snippi.com/s/qdxof12
@@ -466,8 +520,13 @@ https://www.sitepoint.com/web-foundations/making-simple-image-slider-html-css-jq
 https://github.com/thesmart/jquery-scrollspy/blob/master/example/example-1.html
 flexslider - http://flexslider.woothemes.com/thumbnail-controlnav.html, https://woocommerce.com/flexslider/
 https://github.com/noelboss/featherlight/#usage
-
+https://modernizr.com/docs
+https://github.com/afarkas/html5shiv
+https://github.com/scottjehl/Respond
+https://www.linux.com/learn/how-get-started-writing-web-applications-nodejs
 https://managewp.com/create-custom-user-roles-wordpress
+https://code.tutsplus.com/tutorials/how-to-work-with-wordpress-user-metadata--cms-25800
+https://www.sitepoint.com/scroll-based-animations-jquery-css3/
 
 widgets
 https://paulund.co.uk/add-upload-media-library-widgets
@@ -481,8 +540,16 @@ http://code.tutsplus.com/articles/how-to-integrate-the-wordpress-media-uploader-
 LESS
 https://designshack.net/articles/css/introducing-the-less-css-grid/
 https://css-tricks.com/almanac/properties/f/filter/
+http://colintoh.com/blog/display-table-anti-hero
+
 
 http://w3guy.com/simple-form-validation-php-array/
+SEO 
+https://schema.org/docs/gs.html
+https://www.w3.org/TR/microdata/
+https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/itemprop
+http://phpsec.org/projects/guide/4.html
+https://www.apiumtech.com/blog/card-based-web-design-tips-examples/
 
 sublime text 
 https://github.com/Automattic/sublime-jsfmt
