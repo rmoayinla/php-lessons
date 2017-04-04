@@ -1,0 +1,83 @@
+<?php
+//search shortcode //
+function search_form_shortcode( ) 
+{
+    ob_start();
+
+    get_search_form( );
+
+    $html = ob_get_contents();
+    ob_end_clean();
+        
+    return $html;
+}
+
+add_shortcode('search_form', 'search_form_shortcode');
+
+
+//user roles //
+// Get the 'staff_writer' role.
+$staff = $wp_roles->get_role('staff_writer');
+
+// Don't let staff writers upload images.
+$staff->remove_cap('upload_image');
+
+// Do let them edit pages
+$staff->add_cap('edit_pages');
+
+// Add a new role.
+$wp_roles->add_role('ombudsman', array('edit_posts', 'publish_posts',
+'edit_published_posts'));
+
+A WP_User class takes a user id, gets the user_level, maps that to a
+role, and checks capabilities against that role.  During WP init, a
+global $current_user object is instantiated for the currently logged in
+user.  The function current_user_can() is a convenience wrapper around
+$current_user.  It  is used to check capabilities of the current user.
+
+if ( current_user_can('edit_posts') )
+   // Do posty edity type stuff
+   
+ $cu = wp_get_current_user();
+    if ($cu->has_cap('edit_users')) {
+       // do something
+    }    
+ if ( $user->exists() ) {
+       // do something
+    }    
+	
+	
+//registering a widget //
+<?php
+/**
+ * Register our sidebars and widgetized areas.
+ *
+ */
+function arphabet_widgets_init() {
+
+	register_sidebar( array(
+		'name'          => 'Home right sidebar', //just a name to show in admin panel 
+		'id'            => 'home_right_1', //id to be used when inserting in your theme
+		'before_widget' => '<div>',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h2 class="rounded">',
+		'after_title'   => '</h2>',
+	) );
+
+}
+add_action( 'widgets_init', 'arphabet_widgets_init' ); // hook the function 
+
+<?php if ( is_active_sidebar( 'home_right_1' ) ) : // note the name here is equal to the id when registering  ?>
+	<div id="primary-sidebar" class="primary-sidebar widget-area" role="complementary">
+		<?php dynamic_sidebar( 'home_right_1' ); // the same name is used here too ?>
+	</div><!-- #primary-sidebar -->
+<?php endif; ?>
+
+function wpsites_before_post_widget( $content ) {
+	if ( is_singular( array( 'post', 'page' ) ) && is_active_sidebar( 'before-post' ) && is_main_query() ) { // check if its a single post and page and is main query //
+		dynamic_sidebar('before-post');
+	}
+	return $content;
+}
+add_filter( 'the_content', 'wpsites_before_post_widget' );
+?>

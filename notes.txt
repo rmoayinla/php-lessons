@@ -35,6 +35,7 @@ https://shiftedit.net/
 				http://jquery.eisbehr.de/lazy/#examples 
 				
 2. scroll anim - http://johnpolacek.github.io/superscrollorama/
+http://slicknav.com/#examples
 	
 
 wp organisiging content
@@ -334,6 +335,13 @@ http://themehybrid.com/weblog/introduction-to-wordpress-term-meta
 https://github.com/bainternet/Tax-Meta-Class
 https://github.com/bainternet/My-Meta-Box/blob/master/class-usage-demo.php
 https://en.bainternet.info/wordpress-taxonomies-extra-fields-the-easy-way/
+https://www.templatemonster.com/blog/add-custom-user-meta-data-wordpress/
+https://bavotasan.com/2009/adding-extra-fields-to-the-wordpress-user-profile/
+https://premium.wpmudev.org/blog/wordpress-media-library-hidden-features/?utm_expid=3606929-94.Ie3dH-CaRwe6MU3VrZsdvw.0&utm_referrer=https%3A%2F%2Fwww.google.com%2F
+http://wordpress.stackexchange.com/questions/32902/display-all-posts-in-a-custom-post-type-grouped-by-a-custom-taxonomy
+https://metabox.io/docs/
+https://github.com/WebDevStudios/Custom-Metaboxes-and-Fields-for-WordPress/blob/master/example-functions.php#L328
+
 
 hooks reference 
 https://codex.wordpress.org/Plugin_API/Action_Reference
@@ -482,6 +490,7 @@ https://paulund.co.uk/rewrite-urls-wordpress
 
 archive template 
 https://www.smashingmagazine.com/2015/04/building-custom-wordpress-archive-page/
+http://navnav.co/
 
 wp qeries 
 https://codex.wordpress.org/Class_Reference/WP_User_Query
@@ -490,6 +499,7 @@ https://tommcfarlin.com/set-cookies-wordpress/
 https://premium.wpmudev.org/blog/set-get-delete-cookies/
 https://codepen.io/the_ruther4d/post/custom-query-string-vars-in-wordpress
 http://wpengineer.com/2258/change-the-search-url-of-wordpress/
+https://wpseek.com/hook/post_thumbnail_html/
 
 wp comments
 https://core.trac.wordpress.org/browser/tags/4.5/src/wp-includes/comment-template.php#L1250
@@ -500,9 +510,15 @@ http://www.wpexplorer.com/successful-online-store/
 http://www.wpexplorer.com/secure-wordpress-authentication-plugins/
 https://premium.wpmudev.org/blog/set-get-delete-cookies/
 https://www.smashingmagazine.com/2012/05/adding-custom-fields-in-wordpress-comment-form/
+https://perishablepress.com/integrating-google-no-captcha-recaptcha-wordpress-forms/
 
 wordpress template sample 
 http://snippi.com/s/qdxof12
+
+wordpress app
+http://www.hongkiat.com/blog/wordpress-plugins-create-mobile-apps/
+http://www.hongkiat.com/blog/replace-wp-plugins-optimized-code-snippets/
+http://www.hongkiat.com/blog/strengthen-wordpress-security/
 
 responsive design 
 http://torquemag.io/2016/05/make-wordpress-theme-responsive/
@@ -527,6 +543,13 @@ https://www.linux.com/learn/how-get-started-writing-web-applications-nodejs
 https://managewp.com/create-custom-user-roles-wordpress
 https://code.tutsplus.com/tutorials/how-to-work-with-wordpress-user-metadata--cms-25800
 https://www.sitepoint.com/scroll-based-animations-jquery-css3/
+http://www.dahliacreative.com/retinisejs/
+https://code.tutsplus.com/tutorials/ensuring-your-theme-has-retina-support--wp-33430
+http://js-tutorial.com/jquery-repeater-create-a-repeatable-group-of-input-elements-1066
+http://stackoverflow.com/questions/11380045/repeating-div-with-form-fields
+http://stackoverflow.com/questions/8182246/getting-all-post-from-clone-form-elements
+http://snipplr.com/view/55250/jquery--dynamically-adding-form-elements/
+https://toddmotto.com/methods-to-determine-if-an-object-has-a-given-property/
 
 widgets
 https://paulund.co.uk/add-upload-media-library-widgets
