@@ -27,6 +27,7 @@
 22. https://dashboard.pantheon.io/users/cfca5c58-4840-4fd0-bdac-9341fde75ea5#sites/list
 23. pastebin - http://pastebin.com/
 24. http://squaresend.com/docs#APIReference
+25. Deploy.io
 http://snippi.com/s/
 https://shiftedit.net/
 
@@ -113,6 +114,7 @@ https://developer.wordpress.org/themes/advanced-topics/customizer-api/
 http://code.tutsplus.com/series/a-guide-to-the-wordpress-theme-customizer--wp-33722
 https://themetrust.com/how-to-create-custom-controls-for-wordpress-theme-customizer/
 https://www.sitepoint.com/getting-started-with-the-wordpress-theme-customization-api/
+https://github.com/devinsays/customizer-library
 
 https://developer.wordpress.org/plugins/shortcodes/shortcodes-with-parameters/
 https://www.advancedcustomfields.com/resources/gallery/
@@ -388,7 +390,10 @@ https://github.com/WebDevStudios/CMB2/wiki/Bringing-Metaboxes-to-the-Front-End
 https://piklist.com/learn/doc/getting-started-piklist/
 http://www.webtechideas.in/sorting-posts-by-meta-key-and-value/
 https://wpshout.com/wordpress-submit-posts-from-frontend/
-
+https://code.tutsplus.com/tutorials/object-oriented-programming-in-wordpress-document-the-plugin-i--cms-21168
+https://code.tutsplus.com/articles/the-beginners-guide-to-unit-testing-what-is-unit-testing--wp-25728
+https://github.com/devinvinson/WordPress-Plugin-Boilerplate/
+http://www.renegadetechconsulting.com/tutorials/jquery-datepicker-and-wordpress-i18n
 
 ajax 
 https://www.jackreichert.com/2013/03/using-ajax-in-wordpress-development-the-quickstart-guide/
@@ -567,12 +572,73 @@ http://colintoh.com/blog/display-table-anti-hero
 
 
 http://w3guy.com/simple-form-validation-php-array/
+
 SEO 
 https://schema.org/docs/gs.html
 https://www.w3.org/TR/microdata/
 https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/itemprop
 http://phpsec.org/projects/guide/4.html
 https://www.apiumtech.com/blog/card-based-web-design-tips-examples/
+https://my.bluehost.com/cgi/help/498
+https://www.thesitewizard.com/gettingstarted/startwebsite.shtml
+
+APACHE 
+https://httpd.apache.org/docs/trunk/rewrite/remapping.html
+https://www.smashingmagazine.com/2011/11/introduction-to-url-rewriting/
+https://httpd.apache.org/docs/2.4/howto/htaccess.html
+https://www.digitalocean.com/community/tutorials/how-to-use-the-htaccess-file
+https://www.sitepoint.com/guide-url-rewriting/
+https://www.digitalocean.com/community/tutorials/how-to-rewrite-urls-with-mod_rewrite-for-apache-on-ubuntu-16-04
+https://www.addedbytes.com/articles/for-beginners/url-rewriting-for-beginners/
+https://code.tutsplus.com/tutorials/an-in-depth-guide-to-mod_rewrite-for-apache--net-6708
+http://www.askapache.com/htaccess/htaccess-for-webmasters/
+https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/http-caching
+https://samaxes.com/2008/04/htaccess-gzip-and-cache-your-site-for-faster-loading-and-bandwidth-saving/
+https://samaxes.com/2011/05/improving-web-performance-with-apache-and-htaccess/
+https://stackoverflow.com/questions/6878427/leverage-browser-caching-how-on-apache-or-htaccess
+https://www.digitalocean.com/community/tutorials/how-to-configure-apache-content-caching-on-ubuntu-14-04
+https://www.digitalocean.com/community/tutorials/web-caching-basics-terminology-http-headers-and-caching-strategies
+https://betterexplained.com/articles/how-to-optimize-your-site-with-http-caching/
+https://stackoverflow.com/questions/11532636/how-to-prevent-http-file-caching-in-apache-httpd-mamp
+https://stackoverflow.com/questions/13028990/htaccess-leverage-browser-caching-for-images-and-css
+
+SECURITY 
+https://pantheon.io/blog/understanding-and-implementing-website-security-part-4-application-layer
+https://mediatemple.net/community/products/dv/204644740/using-ssh-keys-on-your-server
+
+AGENCY 
+https://pantheon.io/7-myths-guide-to-agency-growth
+
+GIT 
+http://nvie.com/posts/a-successful-git-branching-model/
+https://git-scm.com/docs/user-manual.html
+https://softwareengineering.stackexchange.com/questions/253379/git-workflow-for-web-development
+http://billpatrianakos.me/blog/2012/11/20/do-yourself-a-favor-set-up-a-staging-server/
+https://gist.github.com/mediabeastnz/4f6254d3d8df37de218f
+https://deploybot.com/guides/getting-started-with-deploybot
+https://git-scm.com/book/en/v2/Git-on-the-Server-Setting-Up-the-Server
+https://chrisjean.com/git-submodules-adding-using-removing-and-updating/
+http://stackoverflow.com/questions/5540883/whats-the-practical-difference-between-a-bare-and-non-bare-repository
+http://www.bitflop.dk/tutorials/git-bare-vs-non-bare-repositories.html
+http://stackoverflow.com/questions/9905882/git-post-receive-not-working-correctly
+https://git.wiki.kernel.org/index.php/GitFaq#non-bare
+http://gitready.com/advanced/2009/02/01/push-to-only-bare-repositories.html
+stackoverflow.com/questions/6282859/git-post-receive-not-checking-out-submodules-adding-using-removing-and-updating/
+ryanflorence.com/deploying-websites-with-a-tiny-git-hook
+https://github.com/blog/2104-working-with-submodules
+
+JQUERY PLUGINS 
+http://www.learningjquery.com/2015/03/15-latest-jquery-plugins-for-web-designers
+jquery-confirm
+
+WP CLI
+http://wp-cli.org/
+
+blog writing 
+https://www.enchantingmarketing.com/conversational-writing/
+
+hosting 
+http://www.whoishostingthis.com/compare/ssh-access/
 
 sublime text 
 https://github.com/Automattic/sublime-jsfmt

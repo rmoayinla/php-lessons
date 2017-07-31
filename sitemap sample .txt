@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: http://www.example.com/none-standard-location/sitemap.xml

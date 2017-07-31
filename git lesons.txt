@@ -1,0 +1,167 @@
+AGENCY TIPS 
+* Automating 
+* Sysadmin 
+* Website Managment Platform 
+* User testing and optimization and feedback 
+* Performance: site uptimes, speed
+* Project management tool 
+* workflow 
+* security - measures and updates 
+
+
+
+SSH 
+1. generate an ssh key
+2. add key to ssh agent 
+3. add key to user account 
+
+$ exec ssh-agent bash
+
+
+WORKFLOW 
+				CENTRALIZED WORKFLOW 
+				| MASTER BRANCH  |
+			/		/		/		/	\
+			pull 	pull 	pull 	pull 
+			/ \		/	\	/	\	/	\
+		DEV 1 	  DEV 2 	DEV 3	DEV 4 
+		-----		----	----	----
+		each developer pull from the master branch, work on the local copy and push back to the master branch 
+		
+				feature workflow 
+				| MASTER BRANCH  |
+					/		\
+		feature(homepage)	feature (contact form)
+			/		\
+			DEV 1	DEV 2 
+		---------	-----------
+		each feature on the project is pulled from the master branch, developers only work strictly on their own feature branch 
+		and then finally push back to master branch 
+		
+		GITFLOW WORKFLOW 
+		
+		*master branch: the head contains a production ready state source code. 
+		* develop branch: the head contains the most recent developed changes for the next release 
+		* feature branch: this branch should be pulled from develop, each feature to be added to the project should be 
+		pulled individually and tagged, when work on the feature has finished, the feature branch should be merged back
+		to develop. 
+		* release branch: this branch should be pulled from develop, the release branch should be created when we are about 
+		to release a version of the app, thorough testing on the source code and fixes should be done on the release branch 
+		before it is being merged to master as a successful release. (each release should be tagged and after merging to master 
+		should be deleted). 
+		the release branch should only be created when the develop branch has reached a production ready stage with the 
+		required features already implemented (on the develop branch), some testing and checks and final touches can be 
+		done on the release branch before it is finally merged to master (with a tag version number) as a successful 
+		release, the version number of the app must only be defined when the release branch is getting merged to the 
+		master branch. the release branch has to be merged too to the develop branch so that the develop branch for the next
+		upcoming release will contain the fixes made to the previous release. 
+		
+		* hotfix branch: this branch should be pulled from master, after successful release and an app has gone live, bugs and 
+		issues should be fixed in the hotfix branch, tagged and the merged back to master after they have been solved. 
+		the hotfix branch allows work to be done on the bug while other developers continue work on the next release (develop branch), 
+		when the bug has been fixed, the hotfix branch should be merged to master (a release) and also to the develop branch (to make sure the next release has the bug patched too), 
+		if a release branch already exist during a hotfix, the hotfix branch should be merged to the released branch instead of develop 
+		(since after the release, the release branch will be merged to develop too anyway), each merging of a hotfix branch 
+		should be tagged for reference. 
+		
+		Note
+		- when the product is ready to be launched (live), you launch from the masters branch 
+		- when you need a build of the app/software, you pull from develop branch 
+		- features should be pulled from  develop branch, but pushed to masters branch (push to develop branch then to master) 
+		- When the source code in the develop branch reaches a stable point and is ready to be released, all of the changes 
+		should be merged back into master somehow and then tagged with a release number.
+		- only commit to master branch when the code have been thoroughly tested and is stable to be released, because 
+		every commit to master theoretically is a release which should be tagged. 
+		
+		WHEN TO CREATE A RELEASE BRANCH 
+		- develop is when develop (almost) reflects the desired state of the new release.
+		- At least all features that are targeted for the release-to-be-built must be merged in to develop 
+		at this point in time. e.g if version 1.2 of my app will have a slider and version 1.3 will have a carousel, 
+		the release branch for v 1.2 will be branch off from develop from when the features for v1.2 were merged excluding 
+		all the feature commits or merges for features for v1.3 even though those features exist in develop branch 
+		- Adding large new features here is strictly prohibited, They must be merged into develop, and therefore, 
+		wait for the next big release.
+		
+
+							DEVELOPMENT 
+							TESTING 
+							STAGING 
+							PRODUCTION 
+		
+		DISTRIBUTION REPO (BARE): this repository will be a bare repo, all repo for the project will be cloned
+		from here and all project repo will finally be pushed here, this repo since it is a bare repo is to
+		keep commit history without a working directory (files). 
+		
+		DEVELOPMENT REPO (NON-BARE): this repository will be a non-bare repo, created on a developing machine
+		by each developers with project cloned from distribution repo, this repository will be pushed to the distribution
+		repo where other developers can clone/pull from. 
+		
+		PRODUCTION REPO(non-bare): this repository not required will contain the live/finished app, this should be 
+		cloned from distribution repo., developers shouldnt work on this repo directly, this repo should only fetch
+		commits but not initiate commits.
+		
+		STAGING REPO (non-bare): this repository will contain the most recent developed stage of the app, it can 
+		be cloned from a release branch from development repo for thorough testing, commits made on this repo should be 
+		pushed back to development branch from where it will finally be pushed to production repo. 
+		
+		GIT has three different versions of your file or directory
+		1. working copy: thats is the version you are working on, you edit this and commit
+		2. local repository: this version only stores your commit history. 
+		2. remote repository: this version keeps a cache copy of your remote history. 
+		
+		MAIN REPO (GITHUB) - 
+		|	- - 
+		|	git clone 			HEAD points to the same 
+		|						\
+		LOCAL REPO 				\
+		- - commit 1 	-	-	commit 2 	
+								HEAD has moved ahead of main repo 
+		git fetch github : will reset the HEAD back to the main repo 
+		git pull github: will reset the HEAD and merge changes from main repo into local repo (might cause
+		conflicts).
+		git pull -rebase: will reset the HEAD to main repo, pull the commits from main repo into the local repo
+		then move the HEAD pointer back to your local repo commit 
+		git diff master origin/master: checks the difference between the main repo and local repo
+
+git checkout master
+git fetch origin master
+git rebase -i origin/master
+# Squash commits, fix up commit messages etc.
+git push origin master:master
+
+git reset --merge ORIG_HEAD: reset the repo to before a merge was made. 
+
+git checkout -t origin/experiemt: track and create a branch called experiment on local 
+
+git branch -u origin/master : track changes from origin/master to this branch 
+git push -u origin/master: push to origin/master and track the branch 
+git checkout -b my-branch -t origin/master: create a new branch my-branch, check it out and track it with origin/master
+git branch --set-upstream-to origin/branch my-branch 
+
+git fecth -all : fetch all the changes from all remotes 
+git reset --hard origin/master: change my working directory to match the origin/master branch 
+git merge -s recursive -X theirs|your origin/master
+
+git reset --hard HEAD~5: reset the repo and working directory to the previous 5 commits 
+git pull : pull from remote 
+
+git fetch -all: fetch all remotes
+git reset --hard origin/master: change repo and working directory to match master
+git reset --hard HEAD: remove all staged changes 
+git clean -f -d: remove all untracked files and directories 
+git pull: now pull from remote 
+
+git pull --rebase: pull from the remote and place my changes at the head 
+
+git push origin :master - delete a remote branch master
+git push origin -d master: delete a master branch 
+
+git reset . - remove all staged or indexed changes
+git rm -r --cached .: remove all changes in index or staged 
+
+git push -u origin master:master: push the local master branch and origin master branch and track 
+git pull: pull to the master branch automatically
+
+
+								
+		
