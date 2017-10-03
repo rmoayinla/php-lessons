@@ -642,3 +642,6 @@ http://www.whoishostingthis.com/compare/ssh-access/
 
 sublime text 
 https://github.com/Automattic/sublime-jsfmt
+
+PDO
+http://culttt.com/2012/10/01/roll-your-own-pdo-php-class/
